@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Joseph V. Hoffer, Criminal Defense Attorney, Cleveland Tennessee. State and federal criminal defense. Contact 24/7: (423) 463-0360.">
+<meta name="description" content="Joe Hoffer, Criminal Defense Attorney, Cleveland Tennessee. State and federal criminal defense. Contact 24/7: (423) 463-0360.">
 <title>Joseph V. Hoffer | Criminal Defense Attorney | Cleveland, Tennessee</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
---navy:#0d2b4e;--navy-dk:#071c33;--navy-md:#0f3460;
---gold:#c9a84c;--gold-lt:#ddc06e;
---cream:#f7f5ef;--white:#fff;--txt:#1e2030;--muted:#5a6476;--bdr:#e0d5c5;
---red:#7a1212;--green-lt:#2e7d32
+  --navy:#0d2b4e;--navy-dk:#071c33;--navy-md:#0f3460;
+  --gold:#c9a84c;--gold-lt:#ddc06e;
+  --cream:#f7f5ef;--white:#fff;--txt:#1e2030;--muted:#5a6476;--bdr:#e0d5c5;
+  --red:#7a1212;--green-lt:#2e7d32;
+  --blue:#0055ff;--blue-dk:#0040cc;--blue-lt:#3377ff
 }
 html{font-size:16px;scroll-behavior:smooth}
 body{font-family:Georgia,serif;background:var(--white);color:var(--txt);line-height:1.6;-webkit-text-size-adjust:100%}
@@ -20,29 +21,49 @@ img{max-width:100%;display:block}
 
 /* BUTTONS */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.6rem;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:bold;cursor:pointer;border:none;transition:all .2s;line-height:1.3;text-align:center}
-.btn-gold{background:var(--gold);color:var(--navy-dk)}.btn-gold:hover,.btn-gold:active{background:var(--gold-lt)}
-.btn-outline{background:transparent;border:2px solid var(--gold);color:var(--gold)}.btn-outline:hover,.btn-outline:active{background:rgba(201,168,76,.1)}
-.btn-navy{background:transparent;border:2px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75)}.btn-navy:hover,.btn-navy:active{border-color:var(--gold);color:var(--gold)}
+.btn-gold{background:var(--gold);color:var(--navy-dk)}.btn-gold:hover{background:var(--gold-lt)}
+.btn-outline{background:transparent;border:2px solid var(--gold);color:var(--gold)}.btn-outline:hover{background:rgba(201,168,76,.1)}
+.btn-navy{background:transparent;border:2px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75)}.btn-navy:hover{border-color:var(--gold);color:var(--gold)}
 .btn-nv2{background:transparent;border:2px solid var(--navy);color:var(--navy);min-height:48px}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-dk)}
 .btn-full{width:100%;display:flex}
 .page{display:none}.page.active{display:block}
 
-/* ALERT BAR */
-.alert-bar{background:var(--red);color:#fff;text-align:center;padding:.7rem 1rem;font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;font-weight:bold;line-height:1.7}
-.alert-bar a{color:#ffd0d0;white-space:nowrap}
+/* SPANISH STRIP */
+.esp-strip{background:var(--blue);padding:1.1rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;text-align:center}
+.esp-strip-txt{color:#fff;font-family:Arial,sans-serif;font-size:.95rem;font-weight:bold;letter-spacing:.3px;line-height:1.5}
+.esp-strip-txt small{opacity:.75;font-weight:normal;font-size:.78rem;display:block;margin-top:.15rem}
+.esp-strip-btn{background:#fff;color:var(--blue);font-family:Arial,sans-serif;font-size:.75rem;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:.72rem 1.75rem;border:none;cursor:pointer;min-height:46px;transition:all .18s;white-space:nowrap}
+.esp-strip-btn:hover{background:#dce9ff}
 
-/* NAV */
-.nav{background:var(--navy-dk);border-bottom:2.5px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;height:58px;position:sticky;top:0;z-index:99}
+/* ALERT BARS */
+.alert-bar{color:#fff;text-align:center;padding:.7rem 1rem;font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;font-weight:bold;line-height:1.7}
+.alert-en{background:var(--red)}
+.alert-es{background:var(--blue);display:none}
+.alert-bar a{color:rgba(255,255,255,.8)}
+
+/* NAVS */
+.nav-en-bar,.nav-es-bar{background:var(--navy-dk);display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;height:58px;position:sticky;top:0;z-index:99;border-bottom:2.5px solid var(--gold)}
+.nav-es-bar{border-bottom-color:var(--blue);display:none}
 .nav-brand{color:var(--gold);font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold;cursor:pointer;line-height:1.3;background:none;border:none}
+.nav-es-bar .nav-brand{color:rgba(255,255,255,.9)}
 .nav-actions{display:flex;align-items:center;gap:.5rem}
-.nav-call{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.65rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .85rem;min-height:36px;display:flex;align-items:center;gap:.35rem;white-space:nowrap}
+.nav-call{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.65rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .85rem;min-height:36px;display:flex;align-items:center;gap:.3rem;white-space:nowrap}
+.nav-esp-btn{background:var(--blue);color:#fff;font-family:Arial,sans-serif;font-size:.62rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .75rem;min-height:36px;display:flex;align-items:center;border:none;cursor:pointer;white-space:nowrap}
+.nav-eng-btn{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.62rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .75rem;min-height:36px;display:flex;align-items:center;border:none;cursor:pointer;white-space:nowrap}
 .nav-menu-btn{background:none;border:1px solid rgba(201,168,76,.4);color:var(--gold);width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem}
+.nav-es-bar .nav-menu-btn{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7)}
 
-/* MOBILE MENU */
+/* MOBILE MENUS */
 .mobile-menu{display:none;background:var(--navy-dk);border-bottom:2px solid var(--gold);flex-direction:column}
 .mobile-menu.open{display:flex}
 .mobile-menu a,.mobile-menu button{display:flex;align-items:center;padding:1rem 1.5rem;color:rgba(255,255,255,.7);font-family:Arial,sans-serif;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;border:none;background:none;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.07);width:100%;text-align:left;min-height:52px}
 .mobile-menu a:hover,.mobile-menu button:hover{background:rgba(201,168,76,.08);color:var(--gold)}
+.menu-esp-item{background:var(--blue) !important;color:#fff !important}
+.menu-esp-item:hover{background:var(--blue-dk) !important;color:#fff !important}
+.menu-eng-item{background:var(--gold) !important;color:var(--navy-dk) !important}
+.menu-eng-item:hover{background:var(--gold-lt) !important}
+#menu-es{border-bottom-color:var(--blue)}
 
 /* HERO */
 .hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:50px 1.25rem 55px}
@@ -54,6 +75,7 @@ img{max-width:100%;display:block}
 .hero-ph-sub{color:rgba(255,255,255,.28);font-size:.58rem;letter-spacing:2px;text-transform:uppercase;font-family:Arial,sans-serif;margin-top:.4rem;text-align:center}
 .hero-ph-name{background:var(--gold);color:var(--navy-dk);text-align:center;padding:.5rem;font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;font-weight:bold}
 .hero-ph-title{background:rgba(0,0,0,.35);color:rgba(255,255,255,.6);text-align:center;padding:.36rem;font-family:Arial,sans-serif;font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase}
+.hablo-badge{background:var(--blue);color:#fff;text-align:center;padding:.52rem;font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold}
 .contact-badge{margin-top:.75rem;background:rgba(13,43,78,.5);border:1px solid rgba(201,168,76,.35);padding:.8rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .contact-badge .ico{color:var(--gold);font-size:1rem;margin-top:2px}
 .contact-badge p{color:rgba(255,255,255,.8);font-size:.75rem;font-family:Arial,sans-serif;line-height:1.5}
@@ -131,12 +153,12 @@ img{max-width:100%;display:block}
 .pico{color:var(--gold);font-size:1.3rem}
 .pnum{color:#fff;font-size:1.2rem;font-family:Arial,sans-serif;font-weight:bold;display:block;letter-spacing:.3px}
 .plbl{color:rgba(255,255,255,.38);font-size:.6rem;font-family:Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;display:block}
-.conf-box{background:var(--white);border:1px solid var(--bdr);padding:1.2rem;margin-top:.6rem}
-.conf-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
-.conf-head strong{color:var(--navy);font-family:Arial,sans-serif;font-size:.83rem}
-.conf-box p{font-size:.78rem;color:var(--muted);line-height:1.7;font-family:Arial,sans-serif}
-.conf-box ul{margin-top:.45rem;padding-left:1.1rem}
-.conf-box ul li{font-size:.76rem;color:var(--muted);line-height:1.65;font-family:Arial,sans-serif}
+.priv-box{background:var(--white);border:1px solid var(--bdr);padding:1.2rem;margin-top:.6rem}
+.priv-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.priv-head strong{color:var(--navy);font-family:Arial,sans-serif;font-size:.83rem}
+.priv-box p{font-size:.78rem;color:var(--muted);line-height:1.7;font-family:Arial,sans-serif}
+.priv-box ul{margin-top:.45rem;padding-left:1.1rem}
+.priv-box ul li{font-size:.76rem;color:var(--muted);line-height:1.65;font-family:Arial,sans-serif}
 
 /* FORM */
 .form-box{background:var(--navy-dk);padding:2rem 1.5rem}
@@ -156,7 +178,7 @@ img{max-width:100%;display:block}
 .radio-opt input[type=radio]{accent-color:var(--gold);width:18px;height:18px;min-width:18px;cursor:pointer}
 .radio-opt span{color:rgba(255,255,255,.75);font-family:Arial,sans-serif;font-size:.9rem}
 .submit-btn{width:100%;background:var(--gold);color:var(--navy-dk);padding:1.1rem;font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:bold;border:none;cursor:pointer;transition:background .2s;margin-top:.4rem;min-height:54px}
-.submit-btn:hover,.submit-btn:active{background:var(--gold-lt)}
+.submit-btn:hover{background:var(--gold-lt)}
 .form-note{text-align:center;color:rgba(255,255,255,.28);font-size:.66rem;font-family:Arial,sans-serif;margin-top:.7rem;line-height:1.65}
 
 /* CONFIRMATION */
@@ -168,14 +190,42 @@ img{max-width:100%;display:block}
 .conf-next p{font-size:.79rem;color:rgba(255,255,255,.55);margin-bottom:.3rem;text-align:left;max-width:100%}
 .conf-next strong{color:var(--gold)}
 
-/* CHATBOT / COMING SOON PAGE */
+/* BIOGRAPHY PAGE */
+.bio-hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:70px 1.25rem 60px;text-align:center}
+.bio-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,3rem);font-weight:normal;margin-bottom:.6rem}
+.bio-hero h1 strong{color:var(--gold);font-weight:normal}
+.bio-hero p{color:rgba(255,255,255,.58);font-style:italic;font-size:.93rem;font-family:Arial,sans-serif}
+.bio-sec{padding:60px 1.25rem}
+.bio-white{background:var(--white)}
+.bio-cream{background:var(--cream)}
+.bio-in{max-width:900px;margin:0 auto}
+.bio-narrative p{color:#3a3a4a;line-height:1.95;font-size:1.01rem;margin-bottom:1.2rem}
+.bio-narrative p strong{color:var(--navy)}
+.bio-pullquote{background:var(--cream);border-left:4px solid var(--gold);padding:1.5rem 1.75rem;margin:2rem 0;font-style:italic;font-size:1.05rem;color:var(--navy);line-height:1.8}
+.bio-divider{display:flex;align-items:center;gap:1rem;margin:2.5rem 0}
+.bio-divider-line{flex:1;height:1px;background:var(--bdr)}
+.bio-divider-txt{color:var(--gold);font-family:Arial,sans-serif;font-size:.66rem;letter-spacing:4px;text-transform:uppercase;white-space:nowrap}
+.tl-wrap{border-left:3px solid var(--bdr);display:flex;flex-direction:column}
+.tl-item{display:grid;grid-template-columns:110px 1fr;gap:0;position:relative}
+.tl-yr{padding:1.3rem 1.1rem 0 0;text-align:right;font-size:.7rem;color:var(--gold);font-family:Arial,sans-serif;font-weight:bold;line-height:1.4;position:relative}
+.tl-yr::after{content:'';position:absolute;right:-8px;top:1.6rem;width:13px;height:13px;border-radius:50%;background:var(--gold);border:2px solid var(--white)}
+.tl-body{padding:1.3rem 0 2rem 1.75rem}
+.tl-body h4{color:var(--navy);font-size:.97rem;margin-bottom:.28rem}
+.tl-org{color:var(--gold);font-size:.71rem;letter-spacing:.5px;font-family:Arial,sans-serif;font-weight:bold;text-transform:uppercase;margin-bottom:.45rem}
+.tl-body p{color:var(--muted);font-size:.86rem;line-height:1.7}
+.bio-cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem}
+.bio-cred-card{background:var(--white);border-left:3px solid var(--gold);padding:1.2rem}
+.bio-cred-card h4{color:var(--navy);font-size:.82rem;margin-bottom:.55rem;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+.bio-cred-card p{color:var(--muted);font-size:.8rem;line-height:1.7}
+
+/* CHATBOT PAGE */
 .pgero{background:linear-gradient(135deg,var(--navy-dk),var(--navy));padding:80px 1.25rem 50px;text-align:center}
 .pgero h1{color:var(--white);font-size:clamp(1.5rem,4vw,2rem);font-weight:normal;margin-bottom:.5rem}
 .pgero .psub{color:var(--gold);font-style:italic;font-size:.9rem}
 .ucwrap{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:3.5rem 1.25rem;background:var(--cream)}
 .ucbadge{background:var(--gold);color:var(--navy-dk);padding:.38rem 1.3rem;font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:bold;margin-bottom:1.6rem;display:inline-block}
 .ucwrap h2{color:var(--navy);font-size:1.6rem;font-weight:normal;margin-bottom:.9rem}
-.ucwrap > p{color:var(--muted);max-width:480px;line-height:1.8;font-size:.91rem}
+.ucwrap>p{color:var(--muted);max-width:480px;line-height:1.8;font-size:.91rem}
 .chat-preview{max-width:480px;width:100%;margin:2.25rem auto 0;border:1px solid var(--bdr);background:var(--white)}
 .chat-header{background:var(--navy-dk);padding:.8rem 1.2rem;display:flex;align-items:center;gap:.7rem;border-bottom:2px solid var(--gold)}
 .chat-dot{width:9px;height:9px;border-radius:50%;background:var(--green-lt)}
@@ -197,398 +247,849 @@ img{max-width:100%;display:block}
 
 /* RESPONSIVE */
 @media(max-width:680px){
-.hero-in{grid-template-columns:1fr}
-.hero-photo-desktop{display:none}
-.hero-photo-mobile{display:block}
-.hero h1{font-size:clamp(1.75rem,7vw,2.4rem)}
-.ans-grid{grid-template-columns:1fr}
-.intake-grid{grid-template-columns:1fr}
-.auth-grid{grid-template-columns:1fr}
-.auth-item{border-right:none}
-.fg-row{grid-template-columns:1fr}
-.nav-brand{font-size:.68rem;letter-spacing:1px;max-width:160px;line-height:1.3}
+  .hero-in{grid-template-columns:1fr}
+  .hero-photo-desktop{display:none}
+  .hero-photo-mobile{display:block}
+  .hero h1{font-size:clamp(1.65rem,7vw,2.3rem)}
+  .ans-grid,.intake-grid{grid-template-columns:1fr}
+  .auth-grid{grid-template-columns:1fr}
+  .auth-item{border-right:none}
+  .fg-row{grid-template-columns:1fr}
+  .nav-brand{font-size:.65rem;max-width:150px;line-height:1.3}
+  .tl-item{grid-template-columns:80px 1fr}
+  .bio-cred-grid{grid-template-columns:1fr 1fr}
+  .esp-strip{flex-direction:column;gap:.75rem}
+  .bio-pullquote{padding:1.1rem 1.25rem}
 }
 @media(min-width:681px){
-.hero-photo-mobile{display:none}
-.hero-btns{flex-direction:row;flex-wrap:wrap}
-.hero-btns .btn{width:auto}
-.bridge-btns{flex-direction:row}
-.bridge-btns .btn{width:auto;max-width:none}
-.uc-btns{flex-direction:row;max-width:none}
-.uc-btns .btn{width:auto;flex:1}
+  .hero-photo-mobile{display:none}
+  .hero-btns{flex-direction:row;flex-wrap:wrap}
+  .hero-btns .btn{width:auto}
+  .bridge-btns{flex-direction:row}
+  .bridge-btns .btn{width:auto;max-width:none}
+  .uc-btns{flex-direction:row;max-width:none}
+  .uc-btns .btn{width:auto;flex:1}
 }
 </style>
 </head>
 <body>
 
-<!-- ALERT BAR -->
-<div class="alert-bar">
-&#128274;&nbsp; Submit Your Information Immediately or Call &mdash; 24/7 &mdash; All Information Confidential &nbsp;&bull;&nbsp;
-<a href="tel:4234630360">(423) 463-0360</a>
+<!-- ENGLISH ALERT BAR -->
+<div id="alert-en" class="alert-bar alert-en">
+  &#128274;&nbsp; Submit Your Information Immediately or Call &mdash; 24/7 &mdash; All Information Confidential &nbsp;&bull;&nbsp;
+  <a href="tel:4234630360">(423) 463-0360</a>
 </div>
 
-<!-- NAV -->
-<nav class="nav">
-<button class="nav-brand" onclick="go('home')">Joseph V. Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Attorney at Law</span></button>
-<div class="nav-actions">
-<a href="tel:4234630360" class="nav-call">&#9990; (423) 463-0360</a>
-<button class="nav-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+<!-- SPANISH ALERT BAR -->
+<div id="alert-es" class="alert-bar alert-es">
+  &#128274;&nbsp; Env&iacute;e Su Informaci&oacute;n Ahora o Llame &mdash; 24/7 &mdash; Todo es Estrictamente Confidencial &nbsp;&bull;&nbsp;
+  <a href="tel:4234630360">(423) 463-0360</a>
 </div>
+
+<!-- ENGLISH NAV -->
+<nav id="nav-en" class="nav-en-bar">
+  <button class="nav-brand" onclick="go('home')">Joseph V. Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Attorney at Law</span></button>
+  <div class="nav-actions">
+    <button class="nav-esp-btn" onclick="go('spanish')">&#127466;&#127480; Espa&ntilde;ol</button>
+    <a href="tel:4234630360" class="nav-call">&#9990; (423) 463-0360</a>
+    <button class="nav-menu-btn" onclick="toggleMenu('en')" aria-label="Menu">&#9776;</button>
+  </div>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
-<button onclick="go('home');closeMenu()">Home</button>
-<button onclick="scrollToIntake();closeMenu()">Submit Information Now</button>
-<button onclick="go('chatbot');closeMenu()">Ask My AI</button>
-<a href="tel:4234630360">&#9990; &nbsp;Call (423) 463-0360</a>
+
+<!-- SPANISH NAV -->
+<nav id="nav-es" class="nav-es-bar">
+  <button class="nav-brand" onclick="go('spanish')" style="color:rgba(255,255,255,.9)">Joe Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Abogado Defensor</span></button>
+  <div class="nav-actions">
+    <button class="nav-eng-btn" onclick="go('home')">&#127482;&#127480; English</button>
+    <a href="tel:4234630360" class="nav-call">&#9990; (423) 463-0360</a>
+    <button class="nav-menu-btn" onclick="toggleMenu('es')" style="border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7)" aria-label="Men&uacute;">&#9776;</button>
+  </div>
+</nav>
+
+<!-- ENGLISH MOBILE MENU -->
+<div id="menu-en" class="mobile-menu">
+  <button onclick="go('home');closeMenu()">Home</button>
+  <button onclick="go('bio');closeMenu()">Biography</button>
+  <button onclick="scrollToIntake();closeMenu()">Submit Information Now</button>
+  <button onclick="go('chatbot');closeMenu()">Ask My AI</button>
+  <a href="tel:4234630360">&#9990; &nbsp;Call (423) 463-0360</a>
+  <button class="menu-esp-item" onclick="go('spanish');closeMenu()">&#127466;&#127480; &nbsp;Espa&ntilde;ol</button>
 </div>
 
-<!-- ═══════════════ HOME PAGE ═══════════════ -->
+<!-- SPANISH MOBILE MENU -->
+<div id="menu-es" class="mobile-menu" style="border-bottom-color:var(--blue)">
+  <button onclick="go('spanish');closeMenu()">Inicio</button>
+  <button onclick="scrollToIntakeEs();closeMenu()">Enviar Informaci&oacute;n Ahora</button>
+  <a href="tel:4234630360">&#9990; &nbsp;Llamar (423) 463-0360</a>
+  <button class="menu-eng-item" onclick="go('home');closeMenu()">&#127482;&#127480; &nbsp;English</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════ -->
+<!--           ENGLISH HOME PAGE            -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page active" id="page-home">
 
-<!-- HERO -->
-<div class="hero">
-<div class="hero-in">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-in">
 
-<!-- Mobile photo (stacks above headline) -->
-<div class="hero-photo-mobile">
-<div class="hero-photobox" style="max-width:200px;margin:0 auto">
-<!--
-TO ADD YOUR PHOTO:
-Replace the div below with:
-<img src="hoffer-photo.jpg" alt="Joseph V. Hoffer, Attorney at Law">
--->
-<div class="hero-ph-fallback">
-<div class="hero-ph-init">JVH</div>
-<div class="hero-ph-sub">Add photo here</div>
-</div>
-</div>
-<div class="hero-ph-name">Joseph V. Hoffer</div>
-<div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
-</div>
+      <!-- Mobile photo -->
+      <div class="hero-photo-mobile">
+        <div class="hero-photobox" style="max-width:200px;margin:0 auto">
+          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
+          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Add photo here</div></div>
+        </div>
+        <div class="hero-ph-name">Joseph V. Hoffer</div>
+        <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
+      </div>
 
-<!-- Desktop photo (left column) -->
-<div class="hero-photo-desktop">
-<div class="hero-photobox">
-<!--
-TO ADD YOUR PHOTO:
-Replace the div below with:
-<img src="hoffer-photo.jpg" alt="Joseph V. Hoffer, Attorney at Law">
--->
-<div class="hero-ph-fallback">
-<div class="hero-ph-init">JVH</div>
-<div class="hero-ph-sub">Add photo here</div>
-</div>
-</div>
-<div class="hero-ph-name">Joseph V. Hoffer</div>
-<div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
-<div class="contact-badge">
-<div class="ico">&#128274;</div>
-<p><strong>Submit Information 24/7</strong><br>Leave your concerns immediately for review. Everything is confidential.</p>
-</div>
-</div>
+      <!-- Desktop photo -->
+      <div class="hero-photo-desktop">
+        <div class="hero-photobox">
+          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
+          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Add photo here</div></div>
+        </div>
+        <div class="hero-ph-name">Joseph V. Hoffer</div>
+        <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
+        <div class="contact-badge">
+          <div class="ico">&#128274;</div>
+          <p><strong>Submit Information 24/7</strong><br>Leave your concerns immediately for review. Everything is confidential.</p>
+        </div>
+      </div>
 
-<!-- Hero text -->
-<div>
-<p class="hero-eyebrow">Criminal Defense &nbsp;&bull;&nbsp; Tennessee &amp; Federal Courts</p>
-<h1>I Know How<br>Prosecutors Think &mdash;<br>Because I <strong>Was One.</strong></h1>
-<div class="hero-rule"></div>
-<p class="hero-intro">I spent decades as both a state and federal prosecutor. I was in those rooms where police briefed us on cases &mdash; the strengths, the weaknesses, the things they hoped defense attorneys would never find. Now I use that knowledge to defend you.</p>
-<p class="hero-note">38+ Years Experience &nbsp;&bull;&nbsp; Both Sides of the Courtroom &nbsp;&bull;&nbsp; Licensed TN &amp; OH</p>
-<div class="hero-btns">
-<button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
-<a href="tel:4234630360" class="btn btn-outline">&#9990; Or Call (423) 463-0360</a>
-<button class="btn btn-navy" onclick="go('chatbot')">Ask My AI &#8250;</button>
-</div>
-</div>
-</div>
-</div>
+      <!-- Hero text -->
+      <div>
+        <p class="hero-eyebrow">Criminal Defense &nbsp;&bull;&nbsp; Tennessee &amp; Federal Courts</p>
+        <h1>I Know How<br>Prosecutors Think &mdash;<br>Because I <strong>Was One.</strong></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-intro">I spent decades as both a state and federal prosecutor. I was in those rooms where police briefed us on cases &mdash; the strengths, the weaknesses, the things they hoped defense attorneys would never find. Now I use that knowledge to defend you.</p>
+        <p class="hero-note">38+ Years Experience &nbsp;&bull;&nbsp; Both Sides of the Courtroom &nbsp;&bull;&nbsp; Licensed in Tennessee &amp; Federal Courts</p>
+        <div class="hero-btns">
+          <button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
+          <a href="tel:4234630360" class="btn btn-outline">&#9990; Or Call (423) 463-0360</a>
+          <button class="btn btn-navy" onclick="go('chatbot')">Ask My AI &#8250;</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- QUESTIONS -->
-<div class="qs">
-<div class="qs-in">
-<p class="sec-eyebrow">Do any of these apply to you?</p>
-<h2 class="sec-title">If You Answer Yes to Even One &mdash; Submit Your Information Right Now.</h2>
-<div class="sec-rule"></div>
-<div class="checklist">
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you or a family member been arrested</strong> &mdash; or do you believe an arrest is coming?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Has law enforcement executed a search warrant</strong> on your home, business, vehicle, or electronic devices?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Were you stopped by police and your vehicle was searched</strong> &mdash; with or without your consent?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you been contacted by a detective or federal agent</strong> asking you to come in for questioning?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you been charged with a DUI, drug offense, or weapons charge</strong> and you are unsure of your rights?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Are you under investigation for a state or federal crime</strong> &mdash; including fraud, trafficking, or digital asset offenses?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Do you believe your constitutional rights were violated</strong> during an arrest, search, or interrogation?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Are you facing charges that could mean prison time</strong> and you need someone who knows the system from the inside?</div></div>
-<div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Were you denied bond or is your bond set too high</strong> and you need an attorney who knows how to fight for your release?</div></div>
-</div>
-<div class="qs-bridge">
-<h3>If you checked even one box &mdash; Joseph V. Hoffer is your answer.</h3>
-<p>You deserve a defense attorney who has stood on both sides of this process. Submit your information now &mdash; or call directly. I will review your matter and respond promptly.</p>
-<div class="bridge-btns">
-<button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Information Now</button>
-<a href="tel:4234630360" class="btn btn-navy">&#9990; Or Call (423) 463-0360</a>
-</div>
-</div>
-</div>
-</div>
+  <!-- SPANISH STRIP #1 — near top, right after hero -->
+  <div class="esp-strip">
+    <div class="esp-strip-txt">&#127466;&#127480; &nbsp;&#191;Habla espa&ntilde;ol?
+      <small>Si habla espa&ntilde;ol, haga clic aqu&iacute; para ver esta p&aacute;gina en su idioma.</small>
+    </div>
+    <button class="esp-strip-btn" onclick="go('spanish')">Haga Clic Aqu&iacute; &rarr;</button>
+  </div>
 
-<!-- WHY JOE -->
-<div class="answer">
-<div class="answer-in">
-<div style="display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem">Why Joseph V. Hoffer</div>
-<h2 style="font-size:clamp(1.6rem,4vw,2.4rem);color:var(--navy);font-weight:normal;margin-bottom:.4rem;line-height:1.2">I Have Been in the Rooms<br>Where Your Fate Was Decided.</h2>
-<div style="width:48px;height:3px;background:var(--gold);margin-bottom:2rem"></div>
-<div class="ans-grid">
-<div class="ans-left">
-<p>I am not just an attorney who has read the law. <strong>I have lived it from both sides of the courtroom</strong> for nearly four decades.</p>
-<p>As a state and then federal prosecutor, I was in the rooms where police walked us through their cases before a single charge was filed. I heard what they told us &mdash; and I know <strong>what they left out.</strong></p>
-<p>I made the charging decisions. I trained the younger attorneys in the District Attorney General&rsquo;s office. <strong>I know their tactics because I taught them.</strong> Now I use everything I know to defend you.</p>
-<ul class="inside-list">
-<li>State and federal prosecutor &mdash; Ohio, Puerto Rico, Tennessee</li>
-<li>Over ten years criminal defense in state and federal courts</li>
-<li>Federal Indigent Panel attorney (2005&ndash;2015)</li>
-<li>Authority on Tennessee and federal criminal law</li>
-<li>Authority on search and seizure and the law of arrest</li>
-<li>CLE instructor on cryptocurrency and digital evidence</li>
-<li>Bilingual &mdash; English and Spanish</li>
-</ul>
-<div class="cred-grid">
-<div class="cred"><div class="cred-num">38+</div><div class="cred-lbl">Years in Practice</div></div>
-<div class="cred"><div class="cred-num">10+</div><div class="cred-lbl">Years Defense</div></div>
-<div class="cred"><div class="cred-num">State+Fed</div><div class="cred-lbl">Both Court Levels</div></div>
-<div class="cred"><div class="cred-num">Both Sides</div><div class="cred-lbl">Prosecution &amp; Defense</div></div>
-</div>
-<button class="btn btn-gold btn-full" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
-<div style="margin-top:.6rem;text-align:center"><a href="tel:4234630360" style="color:var(--muted);font-family:Arial,sans-serif;font-size:.8rem">or call (423) 463-0360</a></div>
-</div>
-<div>
-<div class="quote-block">
-<p>&ldquo;Most defense attorneys know the law from the outside. I know it from the inside. I have sat at the prosecutor&rsquo;s table. I know exactly what they are thinking, what they fear, and where their case can be challenged. That experience is what I bring to your defense.&rdquo;</p>
-<cite>&mdash; Joseph V. Hoffer, Attorney at Law</cite>
-</div>
-<div class="expertise-list">
-<div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Search &amp; Seizure Law</h4><p>If law enforcement overstepped, I will find it and use it in your defense.</p></div></div>
-<div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Law of Arrest</h4><p>Illegal arrest procedures can change the entire trajectory of your case.</p></div></div>
-<div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Criminal Procedure &amp; Trial</h4><p>From investigation through verdict &mdash; I have worked every stage from both sides.</p></div></div>
-<div class="exp-item"><div class="exp-ico">&#8383;</div><div class="exp-text"><h4>Cryptocurrency &amp; Digital Evidence</h4><p>One of Tennessee&rsquo;s foremost authorities on blockchain evidence and digital asset crimes.</p></div></div>
-<div class="exp-item"><div class="exp-ico">&#128274;</div><div class="exp-text"><h4>Submit Information or Call 24/7</h4><p>Leave your concerns any time. I will review your matter and respond promptly.</p></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <!-- QUESTIONS -->
+  <div class="qs">
+    <div class="qs-in">
+      <p class="sec-eyebrow">Do any of these apply to you?</p>
+      <h2 class="sec-title">If You Answer Yes to Even One &mdash; Submit Your Information Right Now.</h2>
+      <div class="sec-rule"></div>
+      <div class="checklist">
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you or a family member been arrested</strong> &mdash; or do you believe an arrest is coming?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Has law enforcement executed a search warrant</strong> on your home, business, vehicle, or electronic devices?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Were you stopped by police and your vehicle was searched</strong> &mdash; with or without your consent?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you been contacted by a detective or federal agent</strong> asking you to come in for questioning?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Have you been charged with a DUI, drug offense, or weapons charge</strong> and you are unsure of your rights?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Is a juvenile in your family facing criminal charges</strong> and you need experienced counsel who understands the juvenile court system?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Are you under investigation for a state or federal crime</strong> &mdash; including fraud, trafficking, or digital asset offenses?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Do you believe your constitutional rights were violated</strong> during an arrest, search, or interrogation?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Are you facing charges that could mean prison time</strong> and you need someone who knows the system from the inside?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>Were you denied bond or is your bond set too high</strong> and you need an attorney who knows how to fight for your release?</div></div>
+      </div>
+      <div class="qs-bridge">
+        <h3>If you checked even one box &mdash; Joe Hoffer is your answer.</h3>
+        <p>You deserve a defense attorney who has stood on both sides of this process. Submit your information now &mdash; or call directly. Joe will review your matter and respond promptly.</p>
+        <div class="bridge-btns">
+          <button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Information Now</button>
+          <a href="tel:4234630360" class="btn btn-navy">&#9990; Or Call (423) 463-0360</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- AUTHORITY STRIP -->
-<div class="authority">
-<div class="auth-in">
-<div style="text-align:center;margin-bottom:2.25rem">
-<p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.45rem">Areas of Authority</p>
-<h2 style="color:#fff;font-size:clamp(1.2rem,3.5vw,1.55rem);font-weight:normal;line-height:1.35">I Know What Prosecutors Know &mdash; and What They Are Afraid Of</h2>
-</div>
-<div class="auth-grid">
-<div class="auth-item"><div class="auth-ico">&#9878;</div><h4>Tennessee Criminal Law</h4><p>Decades of practice at trial and appellate level across all classes of criminal offense.</p></div>
-<div class="auth-item"><div class="auth-ico">&#9873;</div><h4>Federal Criminal Law</h4><p>Federal prosecutor experience and Federal Indigent Panel representation in U.S. District Courts.</p></div>
-<div class="auth-item"><div class="auth-ico">&#9776;</div><h4>Search, Seizure &amp; Arrest</h4><p>Recognized authority on Fourth Amendment law &mdash; warrant defects and constitutional violations.</p></div>
-<div class="auth-item"><div class="auth-ico">&#8383;</div><h4>Cryptocurrency &amp; Digital Evidence</h4><p>Pioneer in Tennessee blockchain evidence prosecution and defense. CLE instructor.</p></div>
-</div>
-</div>
-</div>
+  <!-- WHY JOE -->
+  <div class="answer">
+    <div class="answer-in">
+      <div style="display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem">Why Joe Hoffer</div>
+      <h2 style="font-size:clamp(1.6rem,4vw,2.4rem);color:var(--navy);font-weight:normal;margin-bottom:.4rem;line-height:1.2">I Have Been in the Rooms<br>Where Your Fate Was Decided.</h2>
+      <div style="width:48px;height:3px;background:var(--gold);margin-bottom:2rem"></div>
+      <div class="ans-grid">
+        <div class="ans-left">
+          <p>I am not just an attorney who has read the law. <strong>I have lived it from both sides of the courtroom</strong> for nearly four decades.</p>
+          <p>As a state and then federal prosecutor, I was in the rooms where police walked us through their cases before a single charge was filed. I heard what they told us &mdash; and I know <strong>what they left out.</strong></p>
+          <p>I made the charging decisions. I trained the younger attorneys in the District Attorney General&rsquo;s office. <strong>I know their tactics because I taught them.</strong> Now I use everything I know to defend you.</p>
+          <ul class="inside-list">
+            <li>State and federal prosecutor &mdash; Ohio, Puerto Rico, and Tennessee</li>
+            <li>Over ten years criminal defense in state and federal courts</li>
+            <li>Federal Indigent Panel attorney (2005&ndash;2015)</li>
+            <li>Juvenile court experience in both prosecution and defense</li>
+            <li>Authority on Tennessee and federal criminal law</li>
+            <li>Authority on search and seizure and the law of arrest</li>
+            <li>CLE instructor on cryptocurrency and digital evidence</li>
+            <li>Bilingual &mdash; English and Spanish (fluent)</li>
+          </ul>
+          <div class="cred-grid">
+            <div class="cred"><div class="cred-num">38+</div><div class="cred-lbl">Years in Practice</div></div>
+            <div class="cred"><div class="cred-num">10+</div><div class="cred-lbl">Years Defense</div></div>
+            <div class="cred"><div class="cred-num">State+Fed</div><div class="cred-lbl">Both Court Levels</div></div>
+            <div class="cred"><div class="cred-num">Both Sides</div><div class="cred-lbl">Prosecution &amp; Defense</div></div>
+          </div>
+          <button class="btn btn-gold btn-full" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
+          <div style="margin-top:.6rem;text-align:center"><a href="tel:4234630360" style="color:var(--muted);font-family:Arial,sans-serif;font-size:.8rem">or call (423) 463-0360</a></div>
+        </div>
+        <div>
+          <div class="quote-block">
+            <p>&ldquo;Most defense attorneys know the law from the outside. I know it from the inside. I have sat at the prosecutor&rsquo;s table. I know exactly what they are thinking, what they fear, and where their case can be challenged. That experience is what I bring to your defense.&rdquo;</p>
+            <cite>&mdash; Joe Hoffer, Attorney at Law</cite>
+          </div>
+          <div class="expertise-list">
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Search &amp; Seizure Law</h4><p>If law enforcement overstepped, Joe will find it and use it in your defense.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Law of Arrest</h4><p>Illegal arrest procedures can change the entire trajectory of your case.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Criminal Procedure &amp; Trial</h4><p>From investigation through verdict &mdash; experience on every stage from both sides.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Juvenile Criminal Defense</h4><p>Experienced in juvenile court from both the prosecution and defense side &mdash; protecting young people&rsquo;s futures.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#8383;</div><div class="exp-text"><h4>Cryptocurrency &amp; Digital Evidence</h4><p>One of Tennessee&rsquo;s foremost authorities on blockchain evidence and digital asset crimes.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#128274;</div><div class="exp-text"><h4>Submit Information or Call 24/7</h4><p>Leave your concerns any time. Joe will review your matter and respond promptly.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- INTAKE / CONTACT FORM -->
-<div class="intake-sec" id="contact-anchor">
-<div class="intake-in">
-<div style="text-align:center;margin-bottom:2.75rem">
-<p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">&#128274; Available 24 Hours &mdash; 7 Days a Week</p>
-<h2 style="font-size:clamp(1.4rem,4vw,2.2rem);color:var(--navy);font-weight:normal;line-height:1.3">Submit Your Information <em style="color:var(--gold);font-style:normal">Immediately</em><br>or Call &mdash; For Confidential Review</h2>
-<div style="width:48px;height:3px;background:var(--gold);margin:.85rem auto 0"></div>
-</div>
-<div class="intake-grid">
+  <!-- SPANISH STRIP #2 — middle of page, between Why Joe and Authority -->
+  <div class="esp-strip">
+    <div class="esp-strip-txt">&#127466;&#127480; &nbsp;&#191;Habla espa&ntilde;ol? Joe Hoffer habla espa&ntilde;ol con fluidez.
+      <small>Haga clic aqu&iacute; para ver esta p&aacute;gina completamente en espa&ntilde;ol.</small>
+    </div>
+    <button class="esp-strip-btn" onclick="go('spanish')">Ver en Espa&ntilde;ol &rarr;</button>
+  </div>
 
-<!-- Left: info -->
-<div class="intake-left">
-<h2>Your Information Is<br><em>Safe &amp; Confidential</em></h2>
-<div class="intake-rule"></div>
-<p>Submit your information right now and I will begin reviewing your situation immediately. The more detail you provide, the faster I can assess your matter and respond with meaningful guidance.</p>
-<p>You can also reach me directly at any hour &mdash; call or leave a message and I will get back to you promptly.</p>
-<a href="tel:4234630360">
-<div class="phone-block">
-<div class="pico">&#9990;</div>
-<div><span class="plbl">Call or Leave a Message 24/7</span><span class="pnum">(423) 463-0360</span></div>
-</div>
-</a>
-<a href="mailto:jhoffer61@gmail.com">
-<div class="phone-block" style="background:rgba(13,43,78,.08);border:1px solid var(--bdr)">
-<div class="pico" style="color:var(--navy)">&#9993;</div>
-<div><span class="plbl" style="color:var(--muted)">Email</span><span class="pnum" style="color:var(--navy);font-size:.9rem">jhoffer61@gmail.com</span></div>
-</div>
-</a>
-<div class="conf-box">
-<div class="conf-head"><div style="font-size:1.1rem;color:var(--navy)">&#128274;</div><strong>Your Privacy Is Protected</strong></div>
-<p>Everything you share is handled with complete confidentiality. Submitting this form carries no obligation &mdash; you are simply giving me the information I need to begin reviewing your situation.</p>
-<ul>
-<li>Never shared with third parties</li>
-<li>Reviewed personally by Mr. Hoffer</li>
-<li>No obligation &mdash; free initial review</li>
-<li>Response within hours, not days</li>
-</ul>
-</div>
-</div>
+  <!-- AUTHORITY STRIP -->
+  <div class="authority">
+    <div class="auth-in">
+      <div style="text-align:center;margin-bottom:2.25rem">
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.45rem">Areas of Authority</p>
+        <h2 style="color:#fff;font-size:clamp(1.2rem,3.5vw,1.55rem);font-weight:normal;line-height:1.35">Joe Knows What Prosecutors Know &mdash; and What They Are Afraid Of</h2>
+      </div>
+      <div class="auth-grid">
+        <div class="auth-item"><div class="auth-ico">&#9878;</div><h4>Tennessee Criminal Law</h4><p>Decades of practice at trial and appellate level across all classes of criminal offense, including juvenile court.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#9873;</div><h4>Federal Criminal Law</h4><p>Federal prosecutor experience and Federal Indigent Panel representation in U.S. District Courts.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#9776;</div><h4>Search, Seizure &amp; Arrest</h4><p>Recognized authority on Fourth Amendment law &mdash; warrant defects and constitutional violations.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#8383;</div><h4>Cryptocurrency &amp; Digital Evidence</h4><p>Pioneer in Tennessee blockchain evidence prosecution and defense. CLE instructor for law enforcement.</p></div>
+      </div>
+    </div>
+  </div>
 
-<!-- Right: form -->
-<div>
-<div class="form-box" id="intake-form-wrap">
-<div class="form-head">
-<h3>Submit Your Information for Immediate Review</h3>
-<p>Complete as much as you can. Every detail helps me understand your matter faster.</p>
-</div>
-<form id="intake-form" onsubmit="submitForm(event)">
-<div class="fg-row">
-<div class="fg"><label>Full Name</label><input type="text" placeholder="First and last name" required /></div>
-<div class="fg"><label>Phone Number</label><input type="tel" placeholder="(XXX) XXX-XXXX" required /></div>
-</div>
-<div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
-<div class="fg">
-<label>Type of Charge or Offense</label>
-<select>
-<option value="">&#8212; Select the closest match &#8212;</option>
-<option>Arrest / Pending Criminal Charges</option>
-<option>DUI / Driving Offense</option>
-<option>Drug Offense</option>
-<option>Weapons Charge</option>
-<option>Assault / Violent Crime</option>
-<option>Theft / Fraud / Financial Crime</option>
-<option>Federal Offense / Investigation</option>
-<option>Cryptocurrency / Digital Asset Crime</option>
-<option>Search Warrant Executed</option>
-<option>Other / Not Sure Yet</option>
-</select>
-</div>
-<div class="fg-row">
-<div class="fg"><label>Date of Arrest / Incident</label><input type="text" placeholder="MM/DD/YYYY or approx." /></div>
-<div class="fg"><label>City / County</label><input type="text" placeholder="e.g. Cleveland, TN" /></div>
-</div>
-<div class="fg">
-<label>Do you have a court date set?</label>
-<div class="radio-group">
-<label class="radio-opt"><input type="radio" name="courtdate" value="yes" /><span>Yes</span></label>
-<label class="radio-opt"><input type="radio" name="courtdate" value="no" /><span>No</span></label>
-<label class="radio-opt"><input type="radio" name="courtdate" value="unsure" /><span>Not Sure</span></label>
-</div>
-</div>
-<div class="fg">
-<label>Have you spoken to police or given a statement?</label>
-<div class="radio-group">
-<label class="radio-opt"><input type="radio" name="police" value="yes" /><span>Yes</span></label>
-<label class="radio-opt"><input type="radio" name="police" value="no" /><span>No</span></label>
-</div>
-</div>
-<div class="fg">
-<label>Was a search warrant involved?</label>
-<div class="radio-group">
-<label class="radio-opt"><input type="radio" name="warrant" value="yes" /><span>Yes</span></label>
-<label class="radio-opt"><input type="radio" name="warrant" value="no" /><span>No</span></label>
-<label class="radio-opt"><input type="radio" name="warrant" value="unsure" /><span>Not Sure</span></label>
-</div>
-</div>
-<div class="fg"><label>Co-defendants or Other Parties (optional)</label><input type="text" placeholder="Names or relationship, if any" /></div>
-<div class="fg">
-<label>Describe Your Situation</label>
-<textarea placeholder="In your own words, describe what happened. The more you share, the faster I can help. All information is strictly confidential."></textarea>
-</div>
-<button type="submit" class="submit-btn">&#128274; &nbsp;Submit for Immediate Confidential Review</button>
-<div style="text-align:center;margin-top:.7rem">
-<a href="tel:4234630360" style="color:rgba(255,255,255,.4);font-family:Arial,sans-serif;font-size:.78rem">or call (423) 463-0360 directly</a>
-</div>
-<div class="form-note">Submitting this form does not create an attorney-client relationship. All information is confidential.</div>
-</form>
-</div>
+  <!-- SPANISH STRIP #3 — near bottom, before intake form -->
+  <div class="esp-strip">
+    <div class="esp-strip-txt">&#127466;&#127480; &nbsp;Si habla espa&ntilde;ol, haga clic aqu&iacute; &mdash; Joe Hoffer le atender&aacute; directamente en su idioma.
+      <small>P&aacute;gina completa disponible en espa&ntilde;ol. Sin int&eacute;rprete necesario.</small>
+    </div>
+    <button class="esp-strip-btn" onclick="go('spanish')">P&aacute;gina en Espa&ntilde;ol &rarr;</button>
+  </div>
 
-<!-- CONFIRMATION MESSAGE -->
-<div class="confirm-box" id="confirm-box">
-<div class="confirm-ico">&#10003;</div>
-<h3>Your Information Has Been Received</h3>
-<p>Thank you for reaching out. I have received your information and will begin reviewing your matter immediately. You will hear from me promptly.</p>
-<div class="conf-next">
-<p><strong>What happens next:</strong></p>
-<p>&#8250; Your submission is being reviewed personally by Mr. Hoffer</p>
-<p>&#8250; You will be contacted at the number or email you provided</p>
-<p>&#8250; For urgent matters, call directly: <strong>(423) 463-0360</strong></p>
-</div>
-<a href="tel:4234630360" class="btn btn-gold" style="margin-top:1.1rem">&#9990; &nbsp;Call Now &mdash; (423) 463-0360</a>
-</div>
-</div>
+  <!-- INTAKE FORM -->
+  <div class="intake-sec" id="contact-anchor">
+    <div class="intake-in">
+      <div style="text-align:center;margin-bottom:2.75rem">
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">&#128274; Available 24 Hours &mdash; 7 Days a Week</p>
+        <h2 style="font-size:clamp(1.4rem,4vw,2.2rem);color:var(--navy);font-weight:normal;line-height:1.3">Submit Your Information <em style="color:var(--gold);font-style:normal">Immediately</em><br>or Call &mdash; For Confidential Review</h2>
+        <div style="width:48px;height:3px;background:var(--gold);margin:.85rem auto 0"></div>
+      </div>
+      <div class="intake-grid">
+        <div class="intake-left">
+          <h2>Your Information Is<br><em>Safe &amp; Confidential</em></h2>
+          <div class="intake-rule"></div>
+          <p>Submit your information right now and Joe will begin reviewing your situation immediately. The more detail you provide, the faster he can assess your matter and respond with meaningful guidance.</p>
+          <p>You can also reach Joe directly at any hour &mdash; call or leave a message and he will get back to you promptly.</p>
+          <a href="tel:4234630360">
+            <div class="phone-block"><div class="pico">&#9990;</div><div><span class="plbl">Call or Leave a Message 24/7</span><span class="pnum">(423) 463-0360</span></div></div>
+          </a>
+          <a href="mailto:JoeHoffer@hofferdefense.com">
+            <div class="phone-block" style="background:rgba(13,43,78,.08);border:1px solid var(--bdr)"><div class="pico" style="color:var(--navy)">&#9993;</div><div><span class="plbl" style="color:var(--muted)">Email</span><span class="pnum" style="color:var(--navy);font-size:.88rem">JoeHoffer@hofferdefense.com</span></div></div>
+          </a>
+          <div class="priv-box">
+            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#128274;</div><strong>Your Privacy Is Protected</strong></div>
+            <p>Everything you share is handled with complete confidentiality. Submitting this form carries no obligation.</p>
+            <ul>
+              <li>Never shared with third parties</li>
+              <li>Reviewed personally by Joe Hoffer</li>
+              <li>No obligation &mdash; free initial review</li>
+              <li>Response within hours, not days</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="form-box" id="intake-form-wrap">
+            <div class="form-head">
+              <h3>Submit Your Information for Immediate Review</h3>
+              <p>Complete as much as you can. Every detail helps Joe understand your matter faster.</p>
+            </div>
+            <form id="intake-form" onsubmit="submitForm(event)">
+              <div class="fg-row">
+                <div class="fg"><label>Full Name</label><input type="text" placeholder="First and last name" required/></div>
+                <div class="fg"><label>Phone Number</label><input type="tel" placeholder="(XXX) XXX-XXXX" required/></div>
+              </div>
+              <div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+              <div class="fg"><label>Type of Charge or Offense</label>
+                <select>
+                  <option value="">&#8212; Select the closest match &#8212;</option>
+                  <option>Arrest / Pending Criminal Charges</option>
+                  <option>DUI / Driving Offense</option>
+                  <option>Drug Offense</option>
+                  <option>Weapons Charge</option>
+                  <option>Assault / Violent Crime</option>
+                  <option>Juvenile Criminal Matter</option>
+                  <option>Theft / Fraud / Financial Crime</option>
+                  <option>Federal Offense / Investigation</option>
+                  <option>Cryptocurrency / Digital Asset Crime</option>
+                  <option>Search Warrant Executed</option>
+                  <option>Other / Not Sure Yet</option>
+                </select>
+              </div>
+              <div class="fg-row">
+                <div class="fg"><label>Date of Arrest / Incident</label><input type="text" placeholder="MM/DD/YYYY or approx."/></div>
+                <div class="fg"><label>City / County</label><input type="text" placeholder="e.g. Cleveland, TN"/></div>
+              </div>
+              <div class="fg"><label>Do you have a court date set?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="courtdate" value="yes"/><span>Yes</span></label>
+                  <label class="radio-opt"><input type="radio" name="courtdate" value="no"/><span>No</span></label>
+                  <label class="radio-opt"><input type="radio" name="courtdate" value="unsure"/><span>Not Sure</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>Have you spoken to police or given a statement?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="police" value="yes"/><span>Yes</span></label>
+                  <label class="radio-opt"><input type="radio" name="police" value="no"/><span>No</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>Was a search warrant involved?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="warrant" value="yes"/><span>Yes</span></label>
+                  <label class="radio-opt"><input type="radio" name="warrant" value="no"/><span>No</span></label>
+                  <label class="radio-opt"><input type="radio" name="warrant" value="unsure"/><span>Not Sure</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>Co-defendants or Other Parties (optional)</label><input type="text" placeholder="Names or relationship, if any"/></div>
+              <div class="fg"><label>Describe Your Situation</label><textarea placeholder="In your own words, describe what happened. The more you share, the faster Joe can help. All information is strictly confidential."></textarea></div>
+              <button type="submit" class="submit-btn">&#128274; &nbsp;Submit for Immediate Confidential Review</button>
+              <div style="text-align:center;margin-top:.7rem"><a href="tel:4234630360" style="color:rgba(255,255,255,.4);font-family:Arial,sans-serif;font-size:.78rem">or call (423) 463-0360 directly</a></div>
+              <div class="form-note">Submitting this form does not create an attorney-client relationship. All information is confidential.</div>
+            </form>
+          </div>
+          <div class="confirm-box" id="confirm-box">
+            <div class="confirm-ico">&#10003;</div>
+            <h3>Your Information Has Been Received</h3>
+            <p>Thank you for reaching out. Joe has received your information and will begin reviewing your matter immediately. You will hear back promptly.</p>
+            <div class="conf-next">
+              <p><strong>What happens next:</strong></p>
+              <p>&#8250; Your submission is being reviewed personally by Joe Hoffer</p>
+              <p>&#8250; You will be contacted at the number or email you provided</p>
+              <p>&#8250; For urgent matters, call directly: <strong>(423) 463-0360</strong></p>
+            </div>
+            <a href="tel:4234630360" class="btn btn-gold" style="margin-top:1.1rem">&#9990; &nbsp;Call Now &mdash; (423) 463-0360</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
-</div>
+  <div class="disc-bar">This website is for informational purposes only and does not constitute legal advice. Submission of this form does not create an attorney-client relationship. All communications are confidential. Prior results do not guarantee similar outcomes.</div>
+  <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; JoeHoffer@hofferdefense.com &nbsp;&bull;&nbsp; All Rights Reserved</div>
 </div>
 
-<div class="disc-bar">This website is for informational purposes only and does not constitute legal advice. Submission of this form does not create an attorney-client relationship. All communications are confidential. Prior results do not guarantee similar outcomes.</div>
-<div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; All Rights Reserved</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!--           BIOGRAPHY PAGE               -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page" id="page-bio">
+  <div class="bio-hero">
+    <h1>Joseph V. <strong>Hoffer</strong></h1>
+    <p>Criminal Defense Attorney &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; Licensed in Tennessee &amp; Federal Courts</p>
+  </div>
+
+  <!-- PROFESSIONAL NARRATIVE -->
+  <div class="bio-sec bio-white">
+    <div class="bio-in">
+      <p class="sec-eyebrow">Professional Profile</p>
+      <h2 class="sec-title" style="margin-bottom:.4rem">The Attorney Who Has<br>Lived Both Sides of the Law</h2>
+      <div class="sec-rule"></div>
+      <div class="bio-narrative">
+        <p>For nearly four decades, Joe Hoffer has stood in courtrooms where the stakes could not be higher &mdash; where one decision, one argument, or one piece of evidence can determine whether a person walks free or loses everything. What distinguishes Joe from other criminal defense attorneys is not simply his years of experience, but the extraordinary breadth of where that experience was earned and what it taught him about how justice actually works.</p>
+        <p>Joe began his legal career in civil and commercial litigation before answering a calling to public service. What followed was one of the most varied and distinguished prosecutorial careers in the region. He served as an assistant prosecutor in one of Ohio&rsquo;s most demanding courthouses &mdash; the Cuyahoga County Prosecutor&rsquo;s Office in Cleveland &mdash; where he prosecuted general felonies, child abuse cases, and some of the most complex bulk narcotics cases in the state. He then joined the United States Attorney&rsquo;s Office for the District of Puerto Rico, where he prosecuted federal drug trafficking operations, weapons offenses, and immigration crimes at the highest level.</p>
+        <p>Returning to Tennessee, Joe served two separate tenures as Assistant District Attorney General for the Tenth Judicial District &mdash; accumulating decades of trial experience in criminal court, sessions court, and juvenile court. During his most recent tenure, he became one of the first prosecutors in Tennessee to develop and litigate a major cryptocurrency theft case, building the evidentiary frameworks and expert witness strategies that are now being studied by prosecutors and defense attorneys across the state.</p>
+        <div class="bio-pullquote">&ldquo;I have sat in those rooms where the police brief the prosecution. I have made the charging decisions. I have trained the younger attorneys on how to try cases. I know this system from the inside &mdash; and I use that knowledge every day to defend my clients.&rdquo;</div>
+        <p>Between his two prosecutorial tenures, Joe maintained a private criminal defense practice in Cleveland, Tennessee for over a decade, serving as a Federal Indigent Panel attorney from 2005 to 2015 &mdash; meaning the federal courts themselves trusted him to handle the most serious federal criminal cases for defendants who could not afford representation.</p>
+        <p>Today, Joe brings that full spectrum of experience &mdash; <strong>prosecution and defense, state and federal, trial and appellate</strong> &mdash; to every client he represents. He is a recognized authority on Tennessee and federal criminal law, search and seizure, the law of arrest, and criminal procedure. He is fully fluent in Spanish, allowing him to serve clients in both English and Spanish without the barriers of interpretation. And he is one of Tennessee&rsquo;s leading voices on AI integration in legal practice and cryptocurrency evidence in criminal cases.</p>
+        <p>Joe Hoffer does not just know the law. He has lived it &mdash; from both sides of the aisle, in some of the most demanding courtrooms in the country &mdash; for nearly forty years.</p>
+      </div>
+
+      <div class="bio-divider"><div class="bio-divider-line"></div><div class="bio-divider-txt">Career Biography</div><div class="bio-divider-line"></div></div>
+
+      <!-- TIMELINE -->
+      <div class="tl-wrap">
+        <div class="tl-item">
+          <div class="tl-yr">2015&ndash;2026</div>
+          <div class="tl-body">
+            <div class="tl-org">District Attorney General&rsquo;s Office &mdash; 10th Judicial District</div>
+            <h4>Assistant District Attorney General &mdash; Cleveland, Tennessee</h4>
+            <p>General criminal litigation across Criminal Court, Sessions Court, and Juvenile Court. Pioneered cryptocurrency prosecution in the district, developing the evidentiary frameworks and expert witness strategies used in landmark digital asset theft cases. Prosecuted complex criminal matters at all levels of state court.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-yr">2004&ndash;2015</div>
+          <div class="tl-body">
+            <div class="tl-org">Private Practice &mdash; Cleveland, Tennessee</div>
+            <h4>Attorney at Law &mdash; Criminal Defense &amp; Family Law</h4>
+            <p>Primarily criminal defense representation in state and federal courts. Federal Indigent Panel attorney (2005&ndash;2015), trusted by federal courts to represent defendants in the most serious federal criminal matters. Family law practice including divorce and custody proceedings.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-yr">1998&ndash;2004</div>
+          <div class="tl-body">
+            <div class="tl-org">District Attorney General&rsquo;s Office &mdash; 10th Judicial District</div>
+            <h4>Assistant District Attorney General &mdash; Cleveland, Tennessee</h4>
+            <p>General criminal prosecutions across all divisions of the Tenth Judicial District. Extensive experience in child abuse prosecution and general felony trial work in Tennessee state courts.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-yr">1996&ndash;1998</div>
+          <div class="tl-body">
+            <div class="tl-org">United States Attorney&rsquo;s Office &mdash; District of Puerto Rico</div>
+            <h4>Federal Prosecutor &mdash; Hato Rey, Puerto Rico</h4>
+            <p>General federal criminal prosecutions and High Intensity Drug Trafficking Area (HIDTA) multi-agency narcotics cases. Also prosecuted federal gun offenses, immigration offenses, and child exploitation matters. Spanish fluency was integral to this role.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-yr">1989&ndash;1996</div>
+          <div class="tl-body">
+            <div class="tl-org">Cuyahoga County Prosecutor&rsquo;s Office &mdash; Cleveland, Ohio</div>
+            <h4>Assistant Prosecutor</h4>
+            <p>Seven years across three specialized divisions: General Felony Prosecutions (1989&ndash;1992); Child Protection Coalition &mdash; child abuse prosecutions (1992&ndash;1994); Three Times Bulk narcotics unit &mdash; major drug prosecutions (1994&ndash;1996). Appellate practice throughout entire tenure (1989&ndash;1996).</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-yr">1988&ndash;1989</div>
+          <div class="tl-body">
+            <div class="tl-org">Guy, Lammert and Towne &mdash; Akron, Ohio</div>
+            <h4>Associate Attorney</h4>
+            <p>Civil and commercial litigation practice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREDENTIALS -->
+  <div class="bio-sec bio-cream">
+    <div class="bio-in">
+      <p class="sec-eyebrow">Education &amp; Credentials</p>
+      <h2 class="sec-title">Academic Background &amp; Bar Admissions</h2>
+      <div class="sec-rule"></div>
+      <div class="bio-cred-grid">
+        <div class="bio-cred-card">
+          <h4>Juris Doctor</h4>
+          <p>University of Akron, School of Law<br>Akron, Ohio &nbsp;&bull;&nbsp; 1984&ndash;1987<br><br>Admitted to the Ohio Bar, November 1987</p>
+        </div>
+        <div class="bio-cred-card">
+          <h4>Bachelor of Arts</h4>
+          <p>John Carroll University<br>University Heights, Ohio &nbsp;&bull;&nbsp; 1980&ndash;1984<br><br>Major: Economics &nbsp;&bull;&nbsp; Minor: German</p>
+        </div>
+        <div class="bio-cred-card">
+          <h4>Tennessee Bar</h4>
+          <p>Admitted November 1996<br><br>Licensed to practice in all Tennessee state courts and U.S. federal courts within the jurisdiction.</p>
+        </div>
+        <div class="bio-cred-card">
+          <h4>Languages</h4>
+          <p>English (native)<br>Spanish (fully fluent)<br>German (working knowledge)<br><br>No interpreter needed for Spanish-speaking clients.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem">
+        <div class="bio-divider"><div class="bio-divider-line"></div><div class="bio-divider-txt">Areas of Practice</div><div class="bio-divider-line"></div></div>
+        <div class="bio-cred-grid">
+          <div class="bio-cred-card"><h4>Criminal Defense</h4><p>State and federal criminal defense at all court levels including felony, misdemeanor, juvenile, and appeals.</p></div>
+          <div class="bio-cred-card"><h4>Juvenile Criminal Matters</h4><p>Defense of juveniles facing criminal charges in juvenile court with experience on both the prosecution and defense sides.</p></div>
+          <div class="bio-cred-card"><h4>Federal Criminal Defense</h4><p>Representation in U.S. District Court including drug trafficking, firearms, fraud, and other federal offenses.</p></div>
+          <div class="bio-cred-card"><h4>Cryptocurrency &amp; Digital Evidence</h4><p>Defense and prosecution experience in digital asset crimes. CLE instructor for law enforcement and legal professionals.</p></div>
+          <div class="bio-cred-card"><h4>Search &amp; Seizure / Law of Arrest</h4><p>Recognized authority on Fourth Amendment law, unlawful searches, warrant defects, and constitutional violations.</p></div>
+          <div class="bio-cred-card"><h4>Family Law</h4><p>Divorce, custody, and related matters in Tennessee state courts from private practice (2004&ndash;2015).</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:var(--navy-dk);padding:3.5rem 1.25rem;text-align:center">
+    <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.67rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.75rem">Ready to Talk?</p>
+    <h2 style="color:#fff;font-size:clamp(1.35rem,3.5vw,2rem);font-weight:normal;margin-bottom:.7rem;line-height:1.35">Submit Your Information Now or Call Joe Directly</h2>
+    <p style="color:rgba(255,255,255,.5);font-family:Arial,sans-serif;font-size:.88rem;max-width:480px;margin:0 auto 2rem;line-height:1.75">Available 24 hours a day, 7 days a week. Joe will review your matter and respond promptly.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <button class="btn btn-gold" onclick="go('home');setTimeout(scrollToIntake,100)">&#128274; Submit Information Now</button>
+      <a href="tel:4234630360" class="btn btn-navy">&#9990; (423) 463-0360</a>
+    </div>
+  </div>
+
+  <div class="disc-bar">This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is created by viewing this page.</div>
+  <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; All Rights Reserved</div>
 </div>
 
-<!-- ═══════════════ CHATBOT PAGE ═══════════════ -->
+
+<!-- ═══════════════════════════════════════ -->
+<!--           CHATBOT PAGE                 -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-chatbot">
-<div class="pgero">
-<h1>Ask My AI Legal Assistant</h1>
-<p class="psub">Instant answers &mdash; available 24/7 &mdash; based on decades of experience</p>
+  <div class="pgero">
+    <h1>Ask My AI Legal Assistant</h1>
+    <p class="psub">Instant answers &mdash; available 24/7 &mdash; based on decades of experience</p>
+  </div>
+  <div class="ucwrap">
+    <div class="ucbadge">Coming Soon</div>
+    <h2>Joe&rsquo;s AI Assistant Is Being Built</h2>
+    <p>Joe is developing an AI-powered legal assistant available around the clock to answer questions about Tennessee criminal law, search and seizure, your rights during a police stop, juvenile matters, and more &mdash; trained on his decades of experience on both sides of the courtroom.</p>
+    <div class="chat-preview">
+      <div class="chat-header">
+        <div class="chat-dot"></div>
+        <span>Hoffer Legal AI</span>
+        <small style="margin-left:auto;color:rgba(255,255,255,.3);font-family:Arial,sans-serif;font-size:.63rem">Preview</small>
+      </div>
+      <div class="chat-body">
+        <div class="chat-msg bot">Hello. I am Joe Hoffer&rsquo;s AI assistant. I can help you understand your rights and what to expect after an arrest. How can I help you today?</div>
+        <div class="chat-msg user">The police searched my car without a warrant. What are my rights?</div>
+        <div class="chat-msg bot">That is an important question. Whether the search was lawful depends on consent, probable cause, and warrant exceptions. Do not discuss details with police. Submit your information now or call Joe Hoffer at (423) 463-0360.</div>
+      </div>
+      <div class="chat-input-row">
+        <div class="chat-input-fake">Type your question here...</div>
+        <div class="chat-send-fake">Send</div>
+      </div>
+    </div>
+    <div class="uc-btns">
+      <button class="btn btn-gold" onclick="go('home');setTimeout(scrollToIntake,100)">&#128274; Submit Information Now</button>
+      <a href="tel:4234630360" class="btn btn-nv2">&#9990; Call (423) 463-0360</a>
+    </div>
+  </div>
+  <div class="disc-bar">The AI assistant, when available, will provide general legal information only and does not constitute legal advice. No attorney-client relationship is formed through the AI assistant.</div>
+  <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; All Rights Reserved</div>
 </div>
-<div class="ucwrap">
-<div class="ucbadge">Coming Soon</div>
-<h2>My AI Assistant Is Being Built</h2>
-<p>I am developing an AI-powered legal assistant available around the clock to answer questions about Tennessee criminal law, search and seizure, your rights during a police stop, and more &mdash; trained on my decades of experience on both sides of the courtroom.</p>
-<div class="chat-preview">
-<div class="chat-header">
-<div class="chat-dot"></div>
-<span>Hoffer Legal AI</span>
-<small style="margin-left:auto;color:rgba(255,255,255,.3);font-family:Arial,sans-serif;font-size:.63rem">Preview</small>
+
+
+<!-- ═══════════════════════════════════════ -->
+<!--        SPANISH LANDING PAGE            -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page" id="page-spanish">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-in">
+
+      <!-- Mobile photo -->
+      <div class="hero-photo-mobile">
+        <div class="hero-photobox" style="max-width:200px;margin:0 auto">
+          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Su foto aqu&iacute;</div></div>
+        </div>
+        <div class="hablo-badge">&#127466;&#127480; &nbsp;Hablo Espa&ntilde;ol con Fluidez</div>
+        <div class="hero-ph-name">Joe Hoffer</div>
+        <div class="hero-ph-title">Abogado Defensor &nbsp;&bull;&nbsp; Estatal y Federal</div>
+      </div>
+
+      <!-- Desktop photo -->
+      <div class="hero-photo-desktop">
+        <div class="hero-photobox">
+          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Su foto aqu&iacute;</div></div>
+        </div>
+        <div class="hablo-badge">&#127466;&#127480; &nbsp;Hablo Espa&ntilde;ol con Fluidez</div>
+        <div class="hero-ph-name">Joe Hoffer</div>
+        <div class="hero-ph-title">Abogado Defensor &nbsp;&bull;&nbsp; Estatal y Federal</div>
+        <div class="contact-badge" style="border-color:rgba(0,85,255,.4)">
+          <div class="ico" style="color:var(--blue)">&#128274;</div>
+          <p><strong>Env&iacute;e Informaci&oacute;n 24/7</strong><br>Deje sus datos ahora para revisi&oacute;n inmediata. Todo es confidencial.</p>
+        </div>
+      </div>
+
+      <!-- Spanish Hero text -->
+      <div>
+        <p class="hero-eyebrow">Defensa Criminal &nbsp;&bull;&nbsp; Tribunales de Tennessee y Federales</p>
+        <h1>S&eacute; C&oacute;mo Piensan<br>Los Fiscales &mdash;<br>Porque Yo <strong>Fui Uno.</strong></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-intro">Pas&eacute; d&eacute;cadas como fiscal estatal y federal. Estuve en esas reuniones donde la polic&iacute;a nos presentaba los casos &mdash; las fortalezas, las debilidades, lo que esperaban que los abogados defensores nunca descubrieran. Ahora uso ese conocimiento para defenderle a usted &mdash; directamente en su idioma, sin int&eacute;rprete.</p>
+        <p class="hero-note">38+ A&ntilde;os de Experiencia &nbsp;&bull;&nbsp; Ambos Lados del Sistema &nbsp;&bull;&nbsp; Licenciado en Tennessee y Tribunales Federales &nbsp;&bull;&nbsp; Bilingt&uuml;e</p>
+        <div class="hero-btns">
+          <button class="btn btn-gold" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Su Informaci&oacute;n Ahora</button>
+          <a href="tel:4234630360" class="btn btn-outline">&#9990; O Llame (423) 463-0360</a>
+          <button class="btn btn-navy" onclick="go('home')">&#127482;&#127480; Ver en Ingl&eacute;s</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUESTIONS (Spanish) -->
+  <div class="qs">
+    <div class="qs-in">
+      <p class="sec-eyebrow">&#191;Le aplica alguna de estas situaciones?</p>
+      <h2 class="sec-title">Si Responde S&iacute; a Aunque Sea Una &mdash; Env&iacute;e Su Informaci&oacute;n Ahora Mismo.</h2>
+      <div class="sec-rule"></div>
+      <div class="checklist">
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Ha sido arrestado usted o un familiar</strong> &mdash; o cree que un arresto est&aacute; por venir?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;La polic&iacute;a ejecut&oacute; una orden de registro</strong> en su hogar, negocio, veh&iacute;culo o dispositivos electr&oacute;nicos?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Lo detuvo la polic&iacute;a y registraron su veh&iacute;culo</strong> &mdash; con o sin su consentimiento?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Lo ha contactado un detective o agente federal</strong> pidi&eacute;ndole que vaya a declarar o a dar una declaraci&oacute;n?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Le han acusado de un DUI, delito de drogas o armas</strong> y no sabe cu&aacute;les son sus derechos?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Un menor de su familia enfrenta cargos criminales</strong> y necesita un abogado con experiencia en el tribunal juvenil?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Est&aacute; bajo investigaci&oacute;n por un delito estatal o federal</strong> &mdash; incluyendo fraude, tr&aacute;fico de drogas o delitos con activos digitales?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Cree que sus derechos constitucionales fueron violados</strong> durante un arresto, registro o interrogatorio?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Enfrenta cargos que podr&iacute;an resultar en prisi&oacute;n</strong> y necesita a alguien que conozca el sistema desde adentro?</div></div>
+        <div class="cl-item"><div class="cl-box"><span class="cl-check">&#10003;</span></div><div class="cl-text"><strong>&#191;Le negaron la fianza o la fijaron demasiado alta</strong> y necesita un abogado que luche por su libertad?</div></div>
+      </div>
+      <div class="qs-bridge">
+        <h3>Si marc&oacute; aunque sea una casilla &mdash; Joe Hoffer es su respuesta.</h3>
+        <p>Merece un abogado que ha estado en ambos lados de este proceso y sabe exactamente lo que ocurre detr&aacute;s de puertas cerradas. Env&iacute;e su informaci&oacute;n ahora &mdash; o ll&aacute;menos directamente. Joe revisar&aacute; su caso y responder&aacute; con prontitud.</p>
+        <div class="bridge-btns">
+          <button class="btn btn-gold" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Informaci&oacute;n Ahora</button>
+          <a href="tel:4234630360" class="btn btn-navy">&#9990; O Llame (423) 463-0360</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY JOE (Spanish) -->
+  <div class="answer">
+    <div class="answer-in">
+      <div style="display:inline-block;background:var(--blue);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem">&#127466;&#127480; Le Hablo Directamente en Espa&ntilde;ol</div>
+      <div style="display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem;margin-left:.5rem">Por Qu&eacute; Joe Hoffer</div>
+      <h2 style="font-size:clamp(1.6rem,4vw,2.4rem);color:var(--navy);font-weight:normal;margin-bottom:.4rem;line-height:1.2">He Estado en las Salas<br>Donde Se Decidi&oacute; Su Destino.</h2>
+      <div style="width:48px;height:3px;background:var(--gold);margin-bottom:2rem"></div>
+      <div class="ans-grid">
+        <div class="ans-left">
+          <p>No soy simplemente un abogado que ha le&iacute;do la ley. <strong>La he vivido desde ambos lados de la sala del tribunal</strong> durante casi cuatro d&eacute;cadas.</p>
+          <p>Como fiscal estatal y luego como fiscal federal, estuve en las reuniones donde la polic&iacute;a nos presentaba sus casos antes de que se presentara ning&uacute;n cargo. Escuch&eacute; lo que nos dec&iacute;an &mdash; y s&eacute; <strong>lo que dejaron fuera.</strong></p>
+          <p>Yo tom&eacute; las decisiones de acusaci&oacute;n. Entr&eacute; a los despachos del fiscal. <strong>Conozco sus t&aacute;cticas porque las ense&ntilde;&eacute; yo mismo.</strong> Ahora uso todo ese conocimiento para defenderle &mdash; y lo hago directamente en su idioma, sin necesidad de int&eacute;rprete.</p>
+          <p>Entiendo las preocupaciones que muchas personas en la comunidad hispana sienten al enfrentarse al sistema de justicia. Su privacidad y su confianza son mi prioridad absoluta.</p>
+          <ul class="inside-list">
+            <li>Fiscal estatal y federal &mdash; Ohio, Puerto Rico y Tennessee</li>
+            <li>M&aacute;s de diez a&ntilde;os de defensa criminal en tribunales estatales y federales</li>
+            <li>Abogado del Panel Indigente Federal (2005&ndash;2015)</li>
+            <li>Experiencia en tribunal juvenil &mdash; defensa de j&oacute;venes</li>
+            <li>Autoridad en derecho penal de Tennessee y federal</li>
+            <li>Autoridad en registros, incautaciones y ley de arresto</li>
+            <li>Espa&ntilde;ol fluido &mdash; comunicaci&oacute;n directa, sin int&eacute;rprete</li>
+          </ul>
+          <div class="cred-grid">
+            <div class="cred"><div class="cred-num">38+</div><div class="cred-lbl">A&ntilde;os de Pr&aacute;ctica</div></div>
+            <div class="cred"><div class="cred-num">10+</div><div class="cred-lbl">A&ntilde;os en Defensa</div></div>
+            <div class="cred"><div class="cred-num">Estatal+Fed</div><div class="cred-lbl">Ambos Tribunales</div></div>
+            <div class="cred"><div class="cred-num">Bilingt&uuml;e</div><div class="cred-lbl">Espa&ntilde;ol Fluido</div></div>
+          </div>
+          <button class="btn btn-gold btn-full" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Su Informaci&oacute;n Ahora</button>
+          <div style="margin-top:.6rem;text-align:center"><a href="tel:4234630360" style="color:var(--muted);font-family:Arial,sans-serif;font-size:.8rem">o llame al (423) 463-0360</a></div>
+        </div>
+        <div>
+          <div class="quote-block">
+            <p>&laquo;La mayor&iacute;a de los abogados defensores conocen la ley desde afuera. Yo la conozco desde adentro. He estado sentado en la mesa del fiscal. S&eacute; exactamente en qu&eacute; est&aacute;n pensando, qu&eacute; les da miedo y d&oacute;nde puede desafiarse su caso. Y se lo explicar&eacute; directamente en espa&ntilde;ol.&raquo;</p>
+            <cite>&mdash; Joe Hoffer, Abogado de Defensa</cite>
+          </div>
+          <div class="expertise-list">
+            <div class="exp-item"><div class="exp-ico" style="color:var(--blue)">&#127466;&#127480;</div><div class="exp-text"><h4>Hablo Espa&ntilde;ol con Fluidez</h4><p>Comunicaci&oacute;n directa en su idioma. Sin int&eacute;rprete, sin malentendidos, sin barreras.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Ley de Registros e Incautaciones</h4><p>Si las autoridades violaron sus derechos, lo encontrar&eacute; y lo usar&eacute; en su defensa.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Ley de Arresto</h4><p>Los procedimientos ilegales de arresto pueden cambiar completamente el curso de su caso.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Procedimiento Criminal y Juicio</h4><p>Desde la investigaci&oacute;n hasta el veredicto &mdash; experiencia en cada etapa desde ambos lados.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Defensa en Tribunal Juvenil</h4><p>Protecci&oacute;n para j&oacute;venes que enfrentan cargos criminales &mdash; con experiencia en ambos lados del caso.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#128274;</div><div class="exp-text"><h4>Disponible 24/7 &mdash; En Espa&ntilde;ol</h4><p>Env&iacute;e sus datos o ll&aacute;menos a cualquier hora. Joe revisar&aacute; su caso con prontitud.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTHORITY (Spanish) -->
+  <div class="authority">
+    <div class="auth-in">
+      <div style="text-align:center;margin-bottom:2.25rem">
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.45rem">&#193;reas de Autoridad</p>
+        <h2 style="color:#fff;font-size:clamp(1.2rem,3.5vw,1.55rem);font-weight:normal;line-height:1.35">S&eacute; Lo Que Saben Los Fiscales &mdash; y Lo Que Les Preocupa</h2>
+      </div>
+      <div class="auth-grid">
+        <div class="auth-item"><div class="auth-ico">&#9878;</div><h4>Derecho Penal de Tennessee</h4><p>D&eacute;cadas de pr&aacute;ctica en todos los niveles del tribunal penal, incluyendo tribunal juvenil.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#9873;</div><h4>Derecho Penal Federal</h4><p>Experiencia como fiscal federal y representaci&oacute;n en los Tribunales de Distrito de los EE. UU.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#9776;</div><h4>Registros, Incautaciones y Arresto</h4><p>Autoridad reconocida en la Cuarta Enmienda &mdash; &oacute;rdenes defectuosas y violaciones constitucionales.</p></div>
+        <div class="auth-item"><div class="auth-ico">&#8383;</div><h4>Criptomonedas y Evidencia Digital</h4><p>Pionero en Tennessee en la defensa y acusaci&oacute;n de casos con activos digitales.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTAKE FORM (Spanish) -->
+  <div class="intake-sec" id="contact-anchor-es">
+    <div class="intake-in">
+      <div style="text-align:center;margin-bottom:2.75rem">
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">&#128274; Disponible 24 Horas &mdash; 7 D&iacute;as a la Semana</p>
+        <h2 style="font-size:clamp(1.4rem,4vw,2.2rem);color:var(--navy);font-weight:normal;line-height:1.3">Env&iacute;e Su Informaci&oacute;n <em style="color:var(--gold);font-style:normal">Inmediatamente</em><br>o Llame &mdash; Para Revisi&oacute;n Confidencial</h2>
+        <div style="width:48px;height:3px;background:var(--gold);margin:.85rem auto 0"></div>
+      </div>
+      <div class="intake-grid">
+        <div class="intake-left">
+          <h2>Su Informaci&oacute;n Est&aacute;<br><em>Segura y Es Confidencial</em></h2>
+          <div class="intake-rule"></div>
+          <p>Env&iacute;e su informaci&oacute;n ahora y Joe comenzar&aacute; a revisar su situaci&oacute;n de inmediato. Cuantos m&aacute;s detalles proporcione, m&aacute;s r&aacute;pido podr&aacute; evaluar su caso y responderle con orientaci&oacute;n concreta.</p>
+          <p>Tambi&eacute;n puede comunicarse directamente con Joe a cualquier hora &mdash; llame o deje un mensaje y le responder&aacute; con prontitud, en espa&ntilde;ol.</p>
+          <a href="tel:4234630360">
+            <div class="phone-block"><div class="pico">&#9990;</div><div><span class="plbl">Llame o Deje un Mensaje 24/7</span><span class="pnum">(423) 463-0360</span></div></div>
+          </a>
+          <a href="mailto:JoeHoffer@hofferdefense.com">
+            <div class="phone-block" style="background:rgba(13,43,78,.08);border:1px solid var(--bdr)"><div class="pico" style="color:var(--navy)">&#9993;</div><div><span class="plbl" style="color:var(--muted)">Correo Electr&oacute;nico</span><span class="pnum" style="color:var(--navy);font-size:.85rem">JoeHoffer@hofferdefense.com</span></div></div>
+          </a>
+          <div class="priv-box">
+            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#128274;</div><strong>Su Privacidad Est&aacute; Protegida</strong></div>
+            <p>Todo lo que comparta ser&aacute; tratado con absoluta confidencialidad. Enviar este formulario no crea ninguna obligaci&oacute;n &mdash; simplemente le proporciona a Joe la informaci&oacute;n que necesita para comenzar a revisar su situaci&oacute;n.</p>
+            <ul>
+              <li>Nunca se comparte con terceros</li>
+              <li>Revisado personalmente por Joe Hoffer</li>
+              <li>Sin obligaci&oacute;n &mdash; revisi&oacute;n inicial gratuita</li>
+              <li>Respuesta en horas, no d&iacute;as</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="form-box" id="intake-form-wrap-es">
+            <div class="form-head">
+              <h3>Env&iacute;e Su Informaci&oacute;n para Revisi&oacute;n Inmediata</h3>
+              <p>Complete todo lo que pueda. Cada detalle ayuda a Joe a entender su caso m&aacute;s r&aacute;pido.</p>
+            </div>
+            <form id="intake-form-es" onsubmit="submitFormEs(event)">
+              <div class="fg-row">
+                <div class="fg"><label>Nombre Completo</label><input type="text" placeholder="Nombre y apellido" required/></div>
+                <div class="fg"><label>N&uacute;mero de Tel&eacute;fono</label><input type="tel" placeholder="(XXX) XXX-XXXX" required/></div>
+              </div>
+              <div class="fg"><label>Correo Electr&oacute;nico</label><input type="email" placeholder="su@correo.com"/></div>
+              <div class="fg"><label>Tipo de Cargo u Ofensa</label>
+                <select>
+                  <option value="">&#8212; Seleccione la opci&oacute;n m&aacute;s cercana &#8212;</option>
+                  <option>Arresto / Cargos Criminales</option>
+                  <option>DUI / Infracción de Tránsito</option>
+                  <option>Delito de Drogas</option>
+                  <option>Cargo por Armas</option>
+                  <option>Asalto / Crimen Violento</option>
+                  <option>Caso Juvenil</option>
+                  <option>Robo / Fraude / Crimen Financiero</option>
+                  <option>Delito Federal / Investigaci&oacute;n Federal</option>
+                  <option>Criptomonedas / Activos Digitales</option>
+                  <option>Orden de Registro Ejecutada</option>
+                  <option>Otro / No Estoy Seguro</option>
+                </select>
+              </div>
+              <div class="fg-row">
+                <div class="fg"><label>Fecha del Arresto / Incidente</label><input type="text" placeholder="MM/DD/AAAA o aproximada"/></div>
+                <div class="fg"><label>Ciudad / Condado</label><input type="text" placeholder="ej. Cleveland, TN"/></div>
+              </div>
+              <div class="fg"><label>&#191;Tiene fecha en el tribunal?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="courtdate_es" value="si"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="courtdate_es" value="no"/><span>No</span></label>
+                  <label class="radio-opt"><input type="radio" name="courtdate_es" value="nosesabe"/><span>No S&eacute;</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>&#191;Ha hablado con la polic&iacute;a o dado una declaraci&oacute;n?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="police_es" value="si"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="police_es" value="no"/><span>No</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>&#191;Estuvo involucrada una orden de registro?</label>
+                <div class="radio-group">
+                  <label class="radio-opt"><input type="radio" name="warrant_es" value="si"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="warrant_es" value="no"/><span>No</span></label>
+                  <label class="radio-opt"><input type="radio" name="warrant_es" value="nosesabe"/><span>No S&eacute;</span></label>
+                </div>
+              </div>
+              <div class="fg"><label>Co-acusados u Otras Partes (opcional)</label><input type="text" placeholder="Nombres o relaci&oacute;n, si los hay"/></div>
+              <div class="fg"><label>Describa Su Situaci&oacute;n</label><textarea placeholder="En sus propias palabras, describa lo que ocurri&oacute;. Cuanto m&aacute;s comparta, m&aacute;s r&aacute;pido puede ayudarle Joe. Toda informaci&oacute;n es estrictamente confidencial."></textarea></div>
+              <button type="submit" class="submit-btn">&#128274; &nbsp;Enviar para Revisi&oacute;n Confidencial Inmediata</button>
+              <div style="text-align:center;margin-top:.7rem"><a href="tel:4234630360" style="color:rgba(255,255,255,.4);font-family:Arial,sans-serif;font-size:.78rem">o llame directamente al (423) 463-0360</a></div>
+              <div class="form-note">El env&iacute;o de este formulario no crea una relaci&oacute;n abogado-cliente. Toda informaci&oacute;n es confidencial.</div>
+            </form>
+          </div>
+
+          <!-- Spanish Confirmation -->
+          <div class="confirm-box" id="confirm-box-es">
+            <div class="confirm-ico">&#10003;</div>
+            <h3>&#161;Su Informaci&oacute;n Ha Sido Recibida!</h3>
+            <p>Gracias por comunicarse. Joe ha recibido su informaci&oacute;n y comenzar&aacute; a revisar su asunto de inmediato. Se comunicar&aacute; con usted con prontitud.</p>
+            <div class="conf-next">
+              <p><strong>&#191;Qu&eacute; ocurre a continuaci&oacute;n?</strong></p>
+              <p>&#8250; Su informaci&oacute;n est&aacute; siendo revisada personalmente por Joe Hoffer</p>
+              <p>&#8250; Ser&aacute; contactado al n&uacute;mero o correo que proporcion&oacute;</p>
+              <p>&#8250; Para asuntos urgentes, llame directamente: <strong>(423) 463-0360</strong></p>
+            </div>
+            <a href="tel:4234630360" class="btn btn-gold" style="margin-top:1.1rem">&#9990; &nbsp;Llamar Ahora &mdash; (423) 463-0360</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="disc-bar">Este sitio web es solo para fines informativos y no constituye asesoramiento legal. El env&iacute;o de este formulario no crea una relaci&oacute;n abogado-cliente. Toda comunicaci&oacute;n es confidencial. Los resultados anteriores no garantizan resultados similares.</div>
+  <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Abogado de Defensa &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; JoeHoffer@hofferdefense.com &nbsp;&bull;&nbsp; Todos los Derechos Reservados</div>
 </div>
-<div class="chat-body">
-<div class="chat-msg bot">Hello. I am Joe Hoffer&rsquo;s AI assistant. I can help you understand your rights and what to expect after an arrest. How can I help you today?</div>
-<div class="chat-msg user">The police searched my car without a warrant. What are my rights?</div>
-<div class="chat-msg bot">That is an important question. Whether the search was lawful depends on consent, probable cause, and warrant exceptions. Do not discuss details with police. Submit your information now or call Mr. Hoffer at (423) 463-0360.</div>
-</div>
-<div class="chat-input-row">
-<div class="chat-input-fake">Type your question here...</div>
-<div class="chat-send-fake">Send</div>
-</div>
-</div>
-<div class="uc-btns">
-<button class="btn btn-gold" onclick="go('home');setTimeout(scrollToIntake,100)">&#128274; Submit Information Now</button>
-<a href="tel:4234630360" class="btn btn-nv2">&#9990; Call (423) 463-0360</a>
-</div>
-</div>
-<div class="disc-bar">The AI assistant, when available, will provide general legal information only and does not constitute legal advice. No attorney-client relationship is formed through the AI assistant.</div>
-<div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; All Rights Reserved</div>
-</div>
+
 
 <script>
 function go(n) {
-document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-var pg = document.getElementById('page-' + n);
-if (pg) pg.classList.add('active');
-try { window.scrollTo(0, 0); } catch(e) {}
-closeMenu();
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+  var pg = document.getElementById('page-' + n);
+  if (pg) pg.classList.add('active');
+  var isSp = (n === 'spanish');
+  document.getElementById('alert-en').style.display = isSp ? 'none' : 'block';
+  document.getElementById('alert-es').style.display = isSp ? 'block' : 'none';
+  document.getElementById('nav-en').style.display = isSp ? 'none' : 'flex';
+  document.getElementById('nav-es').style.display = isSp ? 'flex' : 'none';
+  closeMenu();
+  try { window.scrollTo(0, 0); } catch(e) {}
 }
-function scrollToIntake() {
-go('home');
-setTimeout(function() {
-var el = document.getElementById('contact-anchor');
-if (el) el.scrollIntoView({ behavior: 'smooth' });
-}, 80);
+
+function toggleMenu(lang) {
+  var menuId = (lang === 'es') ? 'menu-es' : 'menu-en';
+  var other  = (lang === 'es') ? 'menu-en' : 'menu-es';
+  document.getElementById(other).classList.remove('open');
+  document.getElementById(menuId).classList.toggle('open');
 }
-function toggleMenu() {
-document.getElementById('mobile-menu').classList.toggle('open');
-}
+
 function closeMenu() {
-document.getElementById('mobile-menu').classList.remove('open');
+  document.querySelectorAll('.mobile-menu').forEach(function(m) { m.classList.remove('open'); });
 }
+
+function scrollToIntake() {
+  go('home');
+  setTimeout(function() {
+    var el = document.getElementById('contact-anchor');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 80);
+}
+
+function scrollToIntakeEs() {
+  go('spanish');
+  setTimeout(function() {
+    var el = document.getElementById('contact-anchor-es');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 80);
+}
+
 function submitForm(e) {
-e.preventDefault();
-document.getElementById('intake-form-wrap').style.display = 'none';
-var cb = document.getElementById('confirm-box');
-cb.style.display = 'block';
-cb.scrollIntoView({ behavior: 'smooth' });
+  e.preventDefault();
+  document.getElementById('intake-form-wrap').style.display = 'none';
+  var cb = document.getElementById('confirm-box');
+  cb.style.display = 'block';
+  cb.scrollIntoView({ behavior: 'smooth' });
+}
+
+function submitFormEs(e) {
+  e.preventDefault();
+  document.getElementById('intake-form-wrap-es').style.display = 'none';
+  var cb = document.getElementById('confirm-box-es');
+  cb.style.display = 'block';
+  cb.scrollIntoView({ behavior: 'smooth' });
 }
 </script>
-
 </body>
 </html>
