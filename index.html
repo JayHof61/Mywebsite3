@@ -66,9 +66,6 @@ img{max-width:100%;display:block}
 .hero-in{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:3.5rem;align-items:center}
 .hero-photobox{width:100%;background:var(--navy-dk);border:3px solid var(--gold);overflow:hidden}
 .hero-photobox img{width:100%;display:block;object-fit:cover}
-.hero-ph-fallback{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:1rem}
-.hero-ph-init{color:var(--gold);font-size:3rem;font-weight:bold;letter-spacing:3px}
-.hero-ph-sub{color:rgba(255,255,255,.28);font-size:.58rem;letter-spacing:2px;text-transform:uppercase;font-family:Arial,sans-serif;margin-top:.4rem;text-align:center}
 .hero-ph-name{background:var(--gold);color:var(--navy-dk);text-align:center;padding:.5rem;font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;font-weight:bold}
 .hero-ph-title{background:rgba(0,0,0,.35);color:rgba(255,255,255,.6);text-align:center;padding:.36rem;font-family:Arial,sans-serif;font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase}
 .hablo-badge{background:var(--blue);color:#fff;text-align:center;padding:.52rem;font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold}
@@ -307,8 +304,7 @@ img{max-width:100%;display:block}
       <!-- Mobile photo -->
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
-          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
-          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Add photo here</div></div>
+          <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
         </div>
         <div class="hero-ph-name">Joseph V. Hoffer</div>
         <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
@@ -317,8 +313,7 @@ img{max-width:100%;display:block}
       <!-- Desktop photo -->
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
-          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
-          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Add photo here</div></div>
+          <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
         </div>
         <div class="hero-ph-name">Joseph V. Hoffer</div>
         <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
@@ -702,8 +697,7 @@ img{max-width:100%;display:block}
       <!-- Mobile photo Spanish -->
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
-          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
-          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Su foto aqu&iacute;</div></div>
+          <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
         </div>
         <div class="hablo-badge">&#127466;&#127480; &nbsp;Hablo Espa&ntilde;ol con Fluidez</div>
         <div class="hero-ph-name">Joe Hoffer</div>
@@ -713,8 +707,7 @@ img{max-width:100%;display:block}
       <!-- Desktop photo Spanish -->
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
-          <!-- TO ADD YOUR PHOTO: replace the div below with <img src="hoffer-photo.jpg" alt="Joe Hoffer"> -->
-          <div class="hero-ph-fallback"><div class="hero-ph-init">JVH</div><div class="hero-ph-sub">Su foto aqu&iacute;</div></div>
+          <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
         </div>
         <div class="hablo-badge">&#127466;&#127480; &nbsp;Hablo Espa&ntilde;ol con Fluidez</div>
         <div class="hero-ph-name">Joe Hoffer</div>
@@ -964,80 +957,4 @@ function go(n) {
   try { window.scrollTo(0, 0); } catch(e) {}
 }
 
-function toggleMenu(lang) {
-  var menuId = (lang === 'es') ? 'menu-es' : 'menu-en';
-  var other  = (lang === 'es') ? 'menu-en' : 'menu-es';
-  document.getElementById(other).classList.remove('open');
-  document.getElementById(menuId).classList.toggle('open');
-}
-
-function closeMenu() {
-  document.querySelectorAll('.mobile-menu').forEach(function(m) { m.classList.remove('open'); });
-}
-
-function scrollToIntake() {
-  go('home');
-  setTimeout(function() {
-    var el = document.getElementById('contact-anchor');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  }, 80);
-}
-
-function scrollToIntakeEs() {
-  go('spanish');
-  setTimeout(function() {
-    var el = document.getElementById('contact-anchor-es');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  }, 80);
-}
-
-function submitForm(e) {
-  e.preventDefault();
-  var form = document.getElementById('intake-form');
-  var data = new FormData(form);
-  fetch('https://formspree.io/f/mkoqdonl', {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(function(response) {
-    if (response.ok) {
-      document.getElementById('intake-form-wrap').style.display = 'none';
-      var cb = document.getElementById('confirm-box');
-      cb.style.display = 'block';
-      cb.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      alert('There was a problem submitting your information. Please call (423) 463-0360 directly.');
-    }
-  })
-  .catch(function() {
-    alert('There was a problem submitting your information. Please call (423) 463-0360 directly.');
-  });
-}
-
-function submitFormEs(e) {
-  e.preventDefault();
-  var form = document.getElementById('intake-form-es');
-  var data = new FormData(form);
-  fetch('https://formspree.io/f/mkoqdonl', {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(function(response) {
-    if (response.ok) {
-      document.getElementById('intake-form-wrap-es').style.display = 'none';
-      var cb = document.getElementById('confirm-box-es');
-      cb.style.display = 'block';
-      cb.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      alert('Hubo un problema al enviar su información. Por favor llame al (423) 463-0360 directamente.');
-    }
-  })
-  .catch(function() {
-    alert('Hubo un problema al enviar su información. Por favor llame al (423) 463-0360 directamente.');
-  });
-}
-</script>
-</body>
-</html>
+function toggleMenu(
