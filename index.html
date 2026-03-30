@@ -12,7 +12,7 @@
   --gold:#c9a84c;--gold-lt:#ddc06e;
   --cream:#f7f5ef;--white:#fff;--txt:#1e2030;--muted:#5a6476;--bdr:#e0d5c5;
   --red:#7a1212;--green-lt:#2e7d32;
-  --blue:#0055ff;--blue-dk:#0040cc;--blue-lt:#3377ff
+  --blue:#0055ff;--blue-dk:#0040cc
 }
 html{font-size:16px;scroll-behavior:smooth}
 body{font-family:Georgia,serif;background:var(--white);color:var(--txt);line-height:1.6;-webkit-text-size-adjust:100%}
@@ -23,24 +23,20 @@ img{max-width:100%;display:block}
 .btn-outline{background:transparent;border:2px solid var(--gold);color:var(--gold)}.btn-outline:hover{background:rgba(201,168,76,.1)}
 .btn-navy{background:transparent;border:2px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75)}.btn-navy:hover{border-color:var(--gold);color:var(--gold)}
 .btn-nv2{background:transparent;border:2px solid var(--navy);color:var(--navy);min-height:48px}
-.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-dk)}
 .btn-full{width:100%;display:flex}
 .page{display:none}.page.active{display:block}
 
-/* SPANISH STRIP */
 .esp-strip{background:var(--blue);padding:1.1rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;text-align:center}
 .esp-strip-txt{color:#fff;font-family:Arial,sans-serif;font-size:.95rem;font-weight:bold;letter-spacing:.3px;line-height:1.5}
 .esp-strip-txt small{opacity:.75;font-weight:normal;font-size:.78rem;display:block;margin-top:.15rem}
 .esp-strip-btn{background:#fff;color:var(--blue);font-family:Arial,sans-serif;font-size:.75rem;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:.72rem 1.75rem;border:none;cursor:pointer;min-height:46px;transition:all .18s;white-space:nowrap}
 .esp-strip-btn:hover{background:#dce9ff}
 
-/* ALERT BARS */
 .alert-bar{color:#fff;text-align:center;padding:.7rem 1rem;font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;font-weight:bold;line-height:1.7}
 .alert-en{background:var(--red)}
 .alert-es{background:var(--blue);display:none}
 .alert-bar a{color:rgba(255,255,255,.8)}
 
-/* NAVS */
 .nav-en-bar,.nav-es-bar{background:var(--navy-dk);display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;height:58px;position:sticky;top:0;z-index:99;border-bottom:2.5px solid var(--gold)}
 .nav-es-bar{border-bottom-color:var(--blue);display:none}
 .nav-brand{color:var(--gold);font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold;cursor:pointer;line-height:1.3;background:none;border:none}
@@ -51,7 +47,6 @@ img{max-width:100%;display:block}
 .nav-menu-btn{background:none;border:1px solid rgba(201,168,76,.4);color:var(--gold);width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem}
 .nav-es-bar .nav-menu-btn{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7)}
 
-/* MOBILE MENUS */
 .mobile-menu{display:none;background:var(--navy-dk);border-bottom:2px solid var(--gold);flex-direction:column}
 .mobile-menu.open{display:flex}
 .mobile-menu a,.mobile-menu button{display:flex;align-items:center;padding:1rem 1.5rem;color:rgba(255,255,255,.7);font-family:Arial,sans-serif;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;border:none;background:none;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.07);width:100%;text-align:left;min-height:52px}
@@ -61,7 +56,6 @@ img{max-width:100%;display:block}
 .menu-eng-item{background:var(--gold) !important;color:var(--navy-dk) !important}
 .menu-eng-item:hover{background:var(--gold-lt) !important}
 
-/* HERO */
 .hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:50px 1.25rem 55px}
 .hero-in{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:3.5rem;align-items:center}
 .hero-photobox{width:100%;background:var(--navy-dk);border:3px solid var(--gold);overflow:hidden}
@@ -83,7 +77,6 @@ img{max-width:100%;display:block}
 .hero-photo-mobile{display:none;margin-bottom:1.75rem}
 .hero-photo-mobile .hero-photobox{max-width:200px;margin:0 auto}
 
-/* QUESTIONS */
 .qs{background:var(--cream);padding:56px 1.25rem}
 .qs-in{max-width:880px;margin:0 auto}
 .sec-eyebrow{font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
@@ -103,7 +96,6 @@ img{max-width:100%;display:block}
 .bridge-btns{display:flex;flex-direction:column;gap:.65rem;align-items:center}
 .bridge-btns .btn{width:100%;max-width:360px}
 
-/* WHY JOE */
 .answer{background:var(--white);padding:56px 1.25rem}
 .answer-in{max-width:1040px;margin:0 auto}
 .ans-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;margin-top:.25rem}
@@ -125,7 +117,6 @@ img{max-width:100%;display:block}
 .exp-text h4{color:var(--navy);font-size:.88rem;margin-bottom:.18rem}
 .exp-text p{color:var(--muted);font-size:.78rem;line-height:1.6;font-family:Arial,sans-serif}
 
-/* AUTHORITY */
 .authority{background:var(--navy-dk);padding:52px 1.25rem}
 .auth-in{max-width:1040px;margin:0 auto}
 .auth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid rgba(201,168,76,.18)}
@@ -134,7 +125,6 @@ img{max-width:100%;display:block}
 .auth-item p{color:rgba(255,255,255,.42);font-size:.78rem;line-height:1.65;font-family:Arial,sans-serif}
 .auth-ico{font-size:1.3rem;margin-bottom:.65rem;color:var(--gold)}
 
-/* INTAKE */
 .intake-sec{background:var(--cream);padding:56px 1.25rem}
 .intake-in{max-width:1040px;margin:0 auto}
 .intake-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:3.5rem;align-items:start}
@@ -153,7 +143,6 @@ img{max-width:100%;display:block}
 .priv-box ul{margin-top:.45rem;padding-left:1.1rem}
 .priv-box ul li{font-size:.76rem;color:var(--muted);line-height:1.65;font-family:Arial,sans-serif}
 
-/* FORM */
 .form-box{background:var(--navy-dk);padding:2rem 1.5rem}
 .form-head{margin-bottom:1.5rem;padding-bottom:.9rem;border-bottom:1px solid rgba(201,168,76,.18)}
 .form-head h3{color:var(--white);font-size:1.05rem;font-weight:normal;margin-bottom:.25rem}
@@ -174,7 +163,6 @@ img{max-width:100%;display:block}
 .submit-btn:hover{background:var(--gold-lt)}
 .form-note{text-align:center;color:rgba(255,255,255,.28);font-size:.66rem;font-family:Arial,sans-serif;margin-top:.7rem;line-height:1.65}
 
-/* CONFIRMATION */
 .confirm-box{display:none;background:var(--navy-dk);padding:2.5rem 1.5rem;text-align:center}
 .confirm-ico{font-size:2.6rem;color:var(--gold);margin-bottom:1rem}
 .confirm-box h3{color:var(--white);font-size:1.35rem;font-weight:normal;margin-bottom:.7rem}
@@ -183,7 +171,6 @@ img{max-width:100%;display:block}
 .conf-next p{font-size:.79rem;color:rgba(255,255,255,.55);margin-bottom:.3rem;text-align:left;max-width:100%}
 .conf-next strong{color:var(--gold)}
 
-/* BIOGRAPHY PAGE */
 .bio-hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:70px 1.25rem 60px;text-align:center}
 .bio-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,3rem);font-weight:normal;margin-bottom:.6rem}
 .bio-hero h1 strong{color:var(--gold);font-weight:normal}
@@ -211,12 +198,10 @@ img{max-width:100%;display:block}
 .bio-cred-card h4{color:var(--navy);font-size:.82rem;margin-bottom:.55rem;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px}
 .bio-cred-card p{color:var(--muted);font-size:.8rem;line-height:1.7}
 
-/* DISC / FOOTER */
 .disc-bar{background:#040d18;padding:.85rem 1.25rem;text-align:center;font-size:.66rem;color:rgba(255,255,255,.2);font-family:Arial,sans-serif;line-height:1.75}
 .ftr{background:#040d18;border-top:1px solid rgba(201,168,76,.14);padding:1.5rem 1.25rem;text-align:center;font-size:.7rem;color:rgba(255,255,255,.22);font-family:Arial,sans-serif;letter-spacing:.5px;line-height:1.75}
 .ftr em{color:var(--gold);font-style:normal}
 
-/* RESPONSIVE */
 @media(max-width:680px){
   .hero-in{grid-template-columns:1fr}
   .hero-photo-desktop{display:none}
@@ -243,19 +228,15 @@ img{max-width:100%;display:block}
 </head>
 <body>
 
-<!-- ENGLISH ALERT BAR -->
 <div id="alert-en" class="alert-bar alert-en">
-  &#128274;&nbsp; Submit Your Information Immediately or Call &mdash; 24/7 &mdash; All Information Confidential &nbsp;&bull;&nbsp;
+  Submit Your Information Immediately or Call &mdash; 24/7 &mdash; All Information Confidential &nbsp;&bull;&nbsp;
   <a href="tel:4234630360">(423) 463-0360</a>
 </div>
-
-<!-- SPANISH ALERT BAR -->
 <div id="alert-es" class="alert-bar alert-es">
-  &#128274;&nbsp; Env&iacute;e Su Informaci&oacute;n Ahora o Llame &mdash; 24/7 &mdash; Todo es Estrictamente Confidencial &nbsp;&bull;&nbsp;
+  Env&iacute;e Su Informaci&oacute;n Ahora o Llame &mdash; 24/7 &mdash; Todo es Estrictamente Confidencial &nbsp;&bull;&nbsp;
   <a href="tel:4234630360">(423) 463-0360</a>
 </div>
 
-<!-- ENGLISH NAV -->
 <nav id="nav-en" class="nav-en-bar">
   <button class="nav-brand" onclick="go('home')">Joseph V. Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Attorney at Law</span></button>
   <div class="nav-actions">
@@ -265,7 +246,6 @@ img{max-width:100%;display:block}
   </div>
 </nav>
 
-<!-- SPANISH NAV -->
 <nav id="nav-es" class="nav-es-bar">
   <button class="nav-brand" onclick="go('spanish')" style="color:rgba(255,255,255,.9)">Joe Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Abogado Defensor</span></button>
   <div class="nav-actions">
@@ -275,7 +255,6 @@ img{max-width:100%;display:block}
   </div>
 </nav>
 
-<!-- ENGLISH MOBILE MENU -->
 <div id="menu-en" class="mobile-menu">
   <button onclick="go('home');closeMenu()">Home</button>
   <button onclick="go('bio');closeMenu()">Biography</button>
@@ -283,8 +262,6 @@ img{max-width:100%;display:block}
   <a href="tel:4234630360">&#9990; &nbsp;Call (423) 463-0360</a>
   <button class="menu-esp-item" onclick="go('spanish');closeMenu()">&#127466;&#127480; &nbsp;Espa&ntilde;ol</button>
 </div>
-
-<!-- SPANISH MOBILE MENU -->
 <div id="menu-es" class="mobile-menu" style="border-bottom-color:var(--blue)">
   <button onclick="go('spanish');closeMenu()">Inicio</button>
   <button onclick="scrollToIntakeEs();closeMenu()">Enviar Informaci&oacute;n Ahora</button>
@@ -301,7 +278,6 @@ img{max-width:100%;display:block}
   <div class="hero">
     <div class="hero-in">
 
-      <!-- Mobile photo -->
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
           <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
@@ -310,7 +286,6 @@ img{max-width:100%;display:block}
         <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
       </div>
 
-      <!-- Desktop photo -->
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
           <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
@@ -318,7 +293,7 @@ img{max-width:100%;display:block}
         <div class="hero-ph-name">Joseph V. Hoffer</div>
         <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
         <div class="contact-badge">
-          <div class="ico">&#128274;</div>
+          <div class="ico">&#9873;</div>
           <p><strong>Submit Information 24/7</strong><br>Leave your concerns immediately for review. Everything is confidential.</p>
         </div>
       </div>
@@ -330,14 +305,13 @@ img{max-width:100%;display:block}
         <p class="hero-intro">I spent decades as both a state and federal prosecutor. I was in those rooms where police briefed us on cases &mdash; the strengths, the weaknesses, the things they hoped defense attorneys would never find. Now I use that knowledge to defend you.</p>
         <p class="hero-note">38+ Years Experience &nbsp;&bull;&nbsp; Both Sides of the Courtroom &nbsp;&bull;&nbsp; Licensed in Tennessee &amp; Federal Courts</p>
         <div class="hero-btns">
-          <button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
+          <button class="btn btn-gold" onclick="scrollToIntake()">Submit Your Information Now</button>
           <a href="tel:4234630360" class="btn btn-outline">&#9990; Or Call (423) 463-0360</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SPANISH STRIP 1 -->
   <div class="esp-strip">
     <div class="esp-strip-txt">&#127466;&#127480; &nbsp;&#191;Habla espa&ntilde;ol?
       <small>Si habla espa&ntilde;ol, haga clic aqu&iacute; para ver esta p&aacute;gina en su idioma.</small>
@@ -345,7 +319,6 @@ img{max-width:100%;display:block}
     <button class="esp-strip-btn" onclick="go('spanish')">Haga Clic Aqu&iacute; &rarr;</button>
   </div>
 
-  <!-- QUESTIONS -->
   <div class="qs">
     <div class="qs-in">
       <p class="sec-eyebrow">Do any of these apply to you?</p>
@@ -367,14 +340,13 @@ img{max-width:100%;display:block}
         <h3>If you checked even one box &mdash; Joe Hoffer is your answer.</h3>
         <p>You deserve a defense attorney who has stood on both sides of this process. Submit your information now &mdash; or call directly. Joe will review your matter and respond promptly.</p>
         <div class="bridge-btns">
-          <button class="btn btn-gold" onclick="scrollToIntake()">&#128274; Submit Information Now</button>
+          <button class="btn btn-gold" onclick="scrollToIntake()">Submit Information Now</button>
           <a href="tel:4234630360" class="btn btn-navy">&#9990; Or Call (423) 463-0360</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- WHY JOE -->
   <div class="answer">
     <div class="answer-in">
       <div style="display:inline-block;background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem">Why Joe Hoffer</div>
@@ -401,7 +373,7 @@ img{max-width:100%;display:block}
             <div class="cred"><div class="cred-num">State+Fed</div><div class="cred-lbl">Both Court Levels</div></div>
             <div class="cred"><div class="cred-num">Both Sides</div><div class="cred-lbl">Prosecution &amp; Defense</div></div>
           </div>
-          <button class="btn btn-gold btn-full" onclick="scrollToIntake()">&#128274; Submit Your Information Now</button>
+          <button class="btn btn-gold btn-full" onclick="scrollToIntake()">Submit Your Information Now</button>
           <div style="margin-top:.6rem;text-align:center"><a href="tel:4234630360" style="color:var(--muted);font-family:Arial,sans-serif;font-size:.8rem">or call (423) 463-0360</a></div>
         </div>
         <div>
@@ -415,14 +387,13 @@ img{max-width:100%;display:block}
             <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Criminal Procedure &amp; Trial</h4><p>From investigation through verdict &mdash; experience on every stage from both sides.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Juvenile Criminal Defense</h4><p>Experienced in juvenile court from both the prosecution and defense side &mdash; protecting young people&rsquo;s futures.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#8383;</div><div class="exp-text"><h4>Cryptocurrency &amp; Digital Evidence</h4><p>One of Tennessee&rsquo;s foremost authorities on blockchain evidence and digital asset crimes.</p></div></div>
-            <div class="exp-item"><div class="exp-ico">&#128274;</div><div class="exp-text"><h4>Submit Information or Call 24/7</h4><p>Leave your concerns any time. Joe will review your matter and respond promptly.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9993;</div><div class="exp-text"><h4>Submit Information or Call 24/7</h4><p>Leave your concerns any time. Joe will review your matter and respond promptly.</p></div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SPANISH STRIP 2 -->
   <div class="esp-strip">
     <div class="esp-strip-txt">&#127466;&#127480; &nbsp;&#191;Habla espa&ntilde;ol? Joe Hoffer habla espa&ntilde;ol con fluidez.
       <small>Haga clic aqu&iacute; para ver esta p&aacute;gina completamente en espa&ntilde;ol.</small>
@@ -430,7 +401,6 @@ img{max-width:100%;display:block}
     <button class="esp-strip-btn" onclick="go('spanish')">Ver en Espa&ntilde;ol &rarr;</button>
   </div>
 
-  <!-- AUTHORITY -->
   <div class="authority">
     <div class="auth-in">
       <div style="text-align:center;margin-bottom:2.25rem">
@@ -446,7 +416,6 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
-  <!-- SPANISH STRIP 3 -->
   <div class="esp-strip">
     <div class="esp-strip-txt">&#127466;&#127480; &nbsp;Si habla espa&ntilde;ol, haga clic aqu&iacute; &mdash; Joe Hoffer le atender&aacute; directamente en su idioma.
       <small>P&aacute;gina completa disponible en espa&ntilde;ol. Sin int&eacute;rprete necesario.</small>
@@ -454,11 +423,10 @@ img{max-width:100%;display:block}
     <button class="esp-strip-btn" onclick="go('spanish')">P&aacute;gina en Espa&ntilde;ol &rarr;</button>
   </div>
 
-  <!-- INTAKE FORM -->
   <div class="intake-sec" id="contact-anchor">
     <div class="intake-in">
       <div style="text-align:center;margin-bottom:2.75rem">
-        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">&#128274; Available 24 Hours &mdash; 7 Days a Week</p>
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">Available 24 Hours &mdash; 7 Days a Week</p>
         <h2 style="font-size:clamp(1.4rem,4vw,2.2rem);color:var(--navy);font-weight:normal;line-height:1.3">Submit Your Information <em style="color:var(--gold);font-style:normal">Immediately</em><br>or Call &mdash; For Confidential Review</h2>
         <div style="width:48px;height:3px;background:var(--gold);margin:.85rem auto 0"></div>
       </div>
@@ -475,7 +443,7 @@ img{max-width:100%;display:block}
             <div class="phone-block" style="background:rgba(13,43,78,.08);border:1px solid var(--bdr)"><div class="pico" style="color:var(--navy)">&#9993;</div><div><span class="plbl" style="color:var(--muted)">Email</span><span class="pnum" style="color:var(--navy);font-size:.88rem">JoeHoffer@hofferdefense.com</span></div></div>
           </a>
           <div class="priv-box">
-            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#128274;</div><strong>Your Privacy Is Protected</strong></div>
+            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#9873;</div><strong>Your Privacy Is Protected</strong></div>
             <p>Everything you share is handled with complete confidentiality. Submitting this form carries no obligation.</p>
             <ul>
               <li>Never shared with third parties</li>
@@ -491,11 +459,11 @@ img{max-width:100%;display:block}
               <h3>Submit Your Information for Immediate Review</h3>
               <p>Complete as much as you can. Every detail helps Joe understand your matter faster.</p>
             </div>
-            <form id="intake-form" action="https://formspree.io/f/mkoqdonl" method="POST" onsubmit="submitForm(event)">
+            <form id="intake-form">
               <input type="hidden" name="_subject" value="New Client Inquiry — Hoffer Defense">
               <div class="fg-row">
-                <div class="fg"><label>Full Name</label><input type="text" name="full_name" placeholder="First and last name" required/></div>
-                <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(XXX) XXX-XXXX" required/></div>
+                <div class="fg"><label>Full Name</label><input type="text" id="en-name" name="full_name" placeholder="First and last name"/></div>
+                <div class="fg"><label>Phone Number</label><input type="tel" id="en-phone" name="phone" placeholder="(XXX) XXX-XXXX"/></div>
               </div>
               <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com"/></div>
               <div class="fg"><label>Type of Charge or Offense</label>
@@ -540,7 +508,7 @@ img{max-width:100%;display:block}
               </div>
               <div class="fg"><label>Co-defendants or Other Parties (optional)</label><input type="text" name="co_defendants" placeholder="Names or relationship, if any"/></div>
               <div class="fg"><label>Describe Your Situation</label><textarea name="description" placeholder="In your own words, describe what happened. The more you share, the faster Joe can help. All information is strictly confidential."></textarea></div>
-              <button type="submit" class="submit-btn">&#128274; &nbsp;Submit for Immediate Confidential Review</button>
+              <button type="button" class="submit-btn" onclick="submitForm()">Submit for Immediate Confidential Review</button>
               <div style="text-align:center;margin-top:.7rem"><a href="tel:4234630360" style="color:rgba(255,255,255,.4);font-family:Arial,sans-serif;font-size:.78rem">or call (423) 463-0360 directly</a></div>
               <div class="form-note">Submitting this form does not create an attorney-client relationship. All information is confidential.</div>
             </form>
@@ -587,7 +555,7 @@ img{max-width:100%;display:block}
         <p>Returning to Tennessee, Joe served two separate tenures as Assistant District Attorney General for the Tenth Judicial District &mdash; accumulating decades of trial experience in criminal court, sessions court, and juvenile court. During his most recent tenure, he became one of the first prosecutors in Tennessee to develop and litigate a major cryptocurrency theft case, building the evidentiary frameworks and expert witness strategies now being studied by prosecutors and defense attorneys across the state.</p>
         <div class="bio-pullquote">&ldquo;I have sat in those rooms where the police brief the prosecution. I have made the charging decisions. I have trained the younger attorneys on how to try cases. I know this system from the inside &mdash; and I use that knowledge every day to defend my clients.&rdquo;</div>
         <p>Between his two prosecutorial tenures, Joe maintained a private criminal defense practice in Cleveland, Tennessee for over a decade, serving as a Federal Indigent Panel attorney from 2005 to 2015 &mdash; meaning the federal courts themselves trusted him to handle the most serious federal criminal cases for defendants who could not afford representation.</p>
-        <p>Today, Joe brings that full spectrum of experience &mdash; <strong>prosecution and defense, state and federal, trial and appellate</strong> &mdash; to every client he represents. He is a recognized authority on Tennessee and federal criminal law, search and seizure, the law of arrest, and criminal procedure. He is fully fluent in Spanish, allowing him to serve clients in both English and Spanish without the barriers of interpretation. And he is one of Tennessee&rsquo;s leading voices on AI integration in legal practice and cryptocurrency evidence in criminal cases.</p>
+        <p>Today, Joe brings that full spectrum of experience &mdash; <strong>prosecution and defense, state and federal, trial and appellate</strong> &mdash; to every client he represents. He is a recognized authority on Tennessee and federal criminal law, search and seizure, the law of arrest, and criminal procedure. He is fully fluent in Spanish, allowing him to serve clients in both English and Spanish without the barriers of interpretation.</p>
         <p>Joe Hoffer does not just know the law. He has lived it &mdash; from both sides of the aisle, in some of the most demanding courtrooms in the country &mdash; for nearly forty years.</p>
       </div>
 
@@ -676,7 +644,7 @@ img{max-width:100%;display:block}
     <h2 style="color:#fff;font-size:clamp(1.35rem,3.5vw,2rem);font-weight:normal;margin-bottom:.7rem;line-height:1.35">Submit Your Information Now or Call Joe Directly</h2>
     <p style="color:rgba(255,255,255,.5);font-family:Arial,sans-serif;font-size:.88rem;max-width:480px;margin:0 auto 2rem;line-height:1.75">Available 24 hours a day, 7 days a week. Joe will review your matter and respond promptly.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-      <button class="btn btn-gold" onclick="go('home');setTimeout(scrollToIntake,100)">&#128274; Submit Information Now</button>
+      <button class="btn btn-gold" onclick="go('home');setTimeout(scrollToIntake,100)">Submit Information Now</button>
       <a href="tel:4234630360" class="btn btn-navy">&#9990; (423) 463-0360</a>
     </div>
   </div>
@@ -694,7 +662,6 @@ img{max-width:100%;display:block}
   <div class="hero">
     <div class="hero-in">
 
-      <!-- Mobile photo Spanish -->
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
           <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
@@ -704,7 +671,6 @@ img{max-width:100%;display:block}
         <div class="hero-ph-title">Abogado Defensor &nbsp;&bull;&nbsp; Estatal y Federal</div>
       </div>
 
-      <!-- Desktop photo Spanish -->
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
           <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
@@ -713,7 +679,7 @@ img{max-width:100%;display:block}
         <div class="hero-ph-name">Joe Hoffer</div>
         <div class="hero-ph-title">Abogado Defensor &nbsp;&bull;&nbsp; Estatal y Federal</div>
         <div class="contact-badge" style="border-color:rgba(0,85,255,.4)">
-          <div class="ico" style="color:var(--blue)">&#128274;</div>
+          <div class="ico" style="color:var(--blue)">&#9873;</div>
           <p><strong>Env&iacute;e Informaci&oacute;n 24/7</strong><br>Deje sus datos ahora para revisi&oacute;n inmediata. Todo es confidencial.</p>
         </div>
       </div>
@@ -725,7 +691,7 @@ img{max-width:100%;display:block}
         <p class="hero-intro">Pas&eacute; d&eacute;cadas como fiscal estatal y federal. Estuve en esas reuniones donde la polic&iacute;a nos presentaba los casos &mdash; las fortalezas, las debilidades, lo que esperaban que los abogados defensores nunca descubrieran. Ahora uso ese conocimiento para defenderle a usted &mdash; directamente en su idioma, sin int&eacute;rprete.</p>
         <p class="hero-note">38+ A&ntilde;os de Experiencia &nbsp;&bull;&nbsp; Ambos Lados del Sistema &nbsp;&bull;&nbsp; Licenciado en Tennessee y Tribunales Federales &nbsp;&bull;&nbsp; Biling&uuml;e</p>
         <div class="hero-btns">
-          <button class="btn btn-gold" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Su Informaci&oacute;n Ahora</button>
+          <button class="btn btn-gold" onclick="scrollToIntakeEs()">Env&iacute;e Su Informaci&oacute;n Ahora</button>
           <a href="tel:4234630360" class="btn btn-outline">&#9990; O Llame (423) 463-0360</a>
           <button class="btn btn-navy" onclick="go('home')">&#127482;&#127480; Ver en Ingl&eacute;s</button>
         </div>
@@ -733,7 +699,6 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
-  <!-- QUESTIONS Spanish -->
   <div class="qs">
     <div class="qs-in">
       <p class="sec-eyebrow">&#191;Le aplica alguna de estas situaciones?</p>
@@ -755,14 +720,13 @@ img{max-width:100%;display:block}
         <h3>Si marc&oacute; aunque sea una casilla &mdash; Joe Hoffer es su respuesta.</h3>
         <p>Merece un abogado que ha estado en ambos lados de este proceso y sabe exactamente lo que ocurre detr&aacute;s de puertas cerradas. Env&iacute;e su informaci&oacute;n ahora &mdash; o ll&aacute;menos directamente.</p>
         <div class="bridge-btns">
-          <button class="btn btn-gold" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Informaci&oacute;n Ahora</button>
+          <button class="btn btn-gold" onclick="scrollToIntakeEs()">Env&iacute;e Informaci&oacute;n Ahora</button>
           <a href="tel:4234630360" class="btn btn-navy">&#9990; O Llame (423) 463-0360</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- WHY JOE Spanish -->
   <div class="answer">
     <div class="answer-in">
       <div style="display:inline-block;background:var(--blue);color:#fff;font-family:Arial,sans-serif;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;padding:.32rem .9rem;font-weight:bold;margin-bottom:1.1rem">&#127466;&#127480; Le Hablo Directamente en Espa&ntilde;ol</div>
@@ -790,7 +754,7 @@ img{max-width:100%;display:block}
             <div class="cred"><div class="cred-num">Estatal+Fed</div><div class="cred-lbl">Ambos Tribunales</div></div>
             <div class="cred"><div class="cred-num">Biling&uuml;e</div><div class="cred-lbl">Espa&ntilde;ol Fluido</div></div>
           </div>
-          <button class="btn btn-gold btn-full" onclick="scrollToIntakeEs()">&#128274; Env&iacute;e Su Informaci&oacute;n Ahora</button>
+          <button class="btn btn-gold btn-full" onclick="scrollToIntakeEs()">Env&iacute;e Su Informaci&oacute;n Ahora</button>
           <div style="margin-top:.6rem;text-align:center"><a href="tel:4234630360" style="color:var(--muted);font-family:Arial,sans-serif;font-size:.8rem">o llame al (423) 463-0360</a></div>
         </div>
         <div>
@@ -804,14 +768,13 @@ img{max-width:100%;display:block}
             <div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Ley de Arresto</h4><p>Los procedimientos ilegales de arresto pueden cambiar completamente el curso de su caso.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Procedimiento Criminal y Juicio</h4><p>Desde la investigaci&oacute;n hasta el veredicto &mdash; experiencia en cada etapa desde ambos lados.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Defensa en Tribunal Juvenil</h4><p>Protecci&oacute;n para j&oacute;venes que enfrentan cargos criminales &mdash; con experiencia en ambos lados del caso.</p></div></div>
-            <div class="exp-item"><div class="exp-ico">&#128274;</div><div class="exp-text"><h4>Disponible 24/7 &mdash; En Espa&ntilde;ol</h4><p>Env&iacute;e sus datos o ll&aacute;menos a cualquier hora. Joe revisar&aacute; su caso con prontitud.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9993;</div><div class="exp-text"><h4>Disponible 24/7 &mdash; En Espa&ntilde;ol</h4><p>Env&iacute;e sus datos o ll&aacute;menos a cualquier hora. Joe revisar&aacute; su caso con prontitud.</p></div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- AUTHORITY Spanish -->
   <div class="authority">
     <div class="auth-in">
       <div style="text-align:center;margin-bottom:2.25rem">
@@ -827,11 +790,10 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
-  <!-- INTAKE FORM Spanish -->
   <div class="intake-sec" id="contact-anchor-es">
     <div class="intake-in">
       <div style="text-align:center;margin-bottom:2.75rem">
-        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">&#128274; Disponible 24 Horas &mdash; 7 D&iacute;as a la Semana</p>
+        <p style="color:var(--gold);font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:.55rem">Disponible 24 Horas &mdash; 7 D&iacute;as a la Semana</p>
         <h2 style="font-size:clamp(1.4rem,4vw,2.2rem);color:var(--navy);font-weight:normal;line-height:1.3">Env&iacute;e Su Informaci&oacute;n <em style="color:var(--gold);font-style:normal">Inmediatamente</em><br>o Llame &mdash; Para Revisi&oacute;n Confidencial</h2>
         <div style="width:48px;height:3px;background:var(--gold);margin:.85rem auto 0"></div>
       </div>
@@ -848,7 +810,7 @@ img{max-width:100%;display:block}
             <div class="phone-block" style="background:rgba(13,43,78,.08);border:1px solid var(--bdr)"><div class="pico" style="color:var(--navy)">&#9993;</div><div><span class="plbl" style="color:var(--muted)">Correo Electr&oacute;nico</span><span class="pnum" style="color:var(--navy);font-size:.85rem">JoeHoffer@hofferdefense.com</span></div></div>
           </a>
           <div class="priv-box">
-            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#128274;</div><strong>Su Privacidad Est&aacute; Protegida</strong></div>
+            <div class="priv-head"><div style="font-size:1.1rem;color:var(--navy)">&#9873;</div><strong>Su Privacidad Est&aacute; Protegida</strong></div>
             <p>Todo lo que comparta ser&aacute; tratado con absoluta confidencialidad. Enviar este formulario no crea ninguna obligaci&oacute;n.</p>
             <ul>
               <li>Nunca se comparte con terceros</li>
@@ -864,12 +826,12 @@ img{max-width:100%;display:block}
               <h3>Env&iacute;e Su Informaci&oacute;n para Revisi&oacute;n Inmediata</h3>
               <p>Complete todo lo que pueda. Cada detalle ayuda a Joe a entender su caso m&aacute;s r&aacute;pido.</p>
             </div>
-            <form id="intake-form-es" action="https://formspree.io/f/mkoqdonl" method="POST" onsubmit="submitFormEs(event)">
+            <form id="intake-form-es">
               <input type="hidden" name="_subject" value="Nueva Consulta de Cliente — Hoffer Defense">
               <input type="hidden" name="_language" value="Spanish">
               <div class="fg-row">
-                <div class="fg"><label>Nombre Completo</label><input type="text" name="full_name" placeholder="Nombre y apellido" required/></div>
-                <div class="fg"><label>N&uacute;mero de Tel&eacute;fono</label><input type="tel" name="phone" placeholder="(XXX) XXX-XXXX" required/></div>
+                <div class="fg"><label>Nombre Completo</label><input type="text" id="es-name" name="full_name" placeholder="Nombre y apellido"/></div>
+                <div class="fg"><label>N&uacute;mero de Tel&eacute;fono</label><input type="tel" id="es-phone" name="phone" placeholder="(XXX) XXX-XXXX"/></div>
               </div>
               <div class="fg"><label>Correo Electr&oacute;nico</label><input type="email" name="email" placeholder="su@correo.com"/></div>
               <div class="fg"><label>Tipo de Cargo u Ofensa</label>
@@ -894,33 +856,31 @@ img{max-width:100%;display:block}
               </div>
               <div class="fg"><label>&#191;Tiene fecha en el tribunal?</label>
                 <div class="radio-group">
-                  <label class="radio-opt"><input type="radio" name="court_date" value="S&iacute;"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="court_date" value="Si"/><span>S&iacute;</span></label>
                   <label class="radio-opt"><input type="radio" name="court_date" value="No"/><span>No</span></label>
-                  <label class="radio-opt"><input type="radio" name="court_date" value="No S&eacute;"/><span>No S&eacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="court_date" value="No Se"/><span>No S&eacute;</span></label>
                 </div>
               </div>
               <div class="fg"><label>&#191;Ha hablado con la polic&iacute;a o dado una declaraci&oacute;n?</label>
                 <div class="radio-group">
-                  <label class="radio-opt"><input type="radio" name="police_statement" value="S&iacute;"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="police_statement" value="Si"/><span>S&iacute;</span></label>
                   <label class="radio-opt"><input type="radio" name="police_statement" value="No"/><span>No</span></label>
                 </div>
               </div>
               <div class="fg"><label>&#191;Estuvo involucrada una orden de registro?</label>
                 <div class="radio-group">
-                  <label class="radio-opt"><input type="radio" name="search_warrant" value="S&iacute;"/><span>S&iacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="search_warrant" value="Si"/><span>S&iacute;</span></label>
                   <label class="radio-opt"><input type="radio" name="search_warrant" value="No"/><span>No</span></label>
-                  <label class="radio-opt"><input type="radio" name="search_warrant" value="No S&eacute;"/><span>No S&eacute;</span></label>
+                  <label class="radio-opt"><input type="radio" name="search_warrant" value="No Se"/><span>No S&eacute;</span></label>
                 </div>
               </div>
               <div class="fg"><label>Co-acusados u Otras Partes (opcional)</label><input type="text" name="co_defendants" placeholder="Nombres o relaci&oacute;n, si los hay"/></div>
               <div class="fg"><label>Describa Su Situaci&oacute;n</label><textarea name="description" placeholder="En sus propias palabras, describa lo que ocurri&oacute;. Cuanto m&aacute;s comparta, m&aacute;s r&aacute;pido puede ayudarle Joe. Toda informaci&oacute;n es estrictamente confidencial."></textarea></div>
-              <button type="submit" class="submit-btn">&#128274; &nbsp;Enviar para Revisi&oacute;n Confidencial Inmediata</button>
+              <button type="button" class="submit-btn" onclick="submitFormEs()">Enviar para Revisi&oacute;n Confidencial Inmediata</button>
               <div style="text-align:center;margin-top:.7rem"><a href="tel:4234630360" style="color:rgba(255,255,255,.4);font-family:Arial,sans-serif;font-size:.78rem">o llame directamente al (423) 463-0360</a></div>
               <div class="form-note">El env&iacute;o de este formulario no crea una relaci&oacute;n abogado-cliente. Toda informaci&oacute;n es confidencial.</div>
             </form>
           </div>
-
-          <!-- Spanish Confirmation -->
           <div class="confirm-box" id="confirm-box-es">
             <div class="confirm-ico">&#10003;</div>
             <h3>&#161;Su Informaci&oacute;n Ha Sido Recibida!</h3>
@@ -944,17 +904,101 @@ img{max-width:100%;display:block}
 
 
 <script>
-function go(n) {
-  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-  var pg = document.getElementById('page-' + n);
-  if (pg) pg.classList.add('active');
-  var isSp = (n === 'spanish');
-  document.getElementById('alert-en').style.display = isSp ? 'none' : 'block';
-  document.getElementById('alert-es').style.display = isSp ? 'block' : 'none';
-  document.getElementById('nav-en').style.display = isSp ? 'none' : 'flex';
-  document.getElementById('nav-es').style.display = isSp ? 'flex' : 'none';
+function go(n){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  var pg=document.getElementById('page-'+n);
+  if(pg)pg.classList.add('active');
+  var isSp=(n==='spanish');
+  document.getElementById('alert-en').style.display=isSp?'none':'block';
+  document.getElementById('alert-es').style.display=isSp?'block':'none';
+  document.getElementById('nav-en').style.display=isSp?'none':'flex';
+  document.getElementById('nav-es').style.display=isSp?'flex':'none';
   closeMenu();
-  try { window.scrollTo(0, 0); } catch(e) {}
+  try{window.scrollTo(0,0);}catch(e){}
 }
 
-function toggleMenu(
+function toggleMenu(lang){
+  var menuId=(lang==='es')?'menu-es':'menu-en';
+  var other=(lang==='es')?'menu-en':'menu-es';
+  document.getElementById(other).classList.remove('open');
+  document.getElementById(menuId).classList.toggle('open');
+}
+
+function closeMenu(){
+  document.querySelectorAll('.mobile-menu').forEach(function(m){m.classList.remove('open');});
+}
+
+function scrollToIntake(){
+  go('home');
+  setTimeout(function(){
+    var el=document.getElementById('contact-anchor');
+    if(el)el.scrollIntoView({behavior:'smooth'});
+  },80);
+}
+
+function scrollToIntakeEs(){
+  go('spanish');
+  setTimeout(function(){
+    var el=document.getElementById('contact-anchor-es');
+    if(el)el.scrollIntoView({behavior:'smooth'});
+  },80);
+}
+
+function submitForm(){
+  var name=document.getElementById('en-name').value.trim();
+  var phone=document.getElementById('en-phone').value.trim();
+  if(!name||!phone){
+    alert('Please enter your name and phone number so Joe can reach you.');
+    return;
+  }
+  var data=new FormData(document.getElementById('intake-form'));
+  fetch('https://formspree.io/f/mkoqdonl',{
+    method:'POST',
+    body:data,
+    headers:{'Accept':'application/json'}
+  })
+  .then(function(response){
+    if(response.ok){
+      document.getElementById('intake-form-wrap').style.display='none';
+      var cb=document.getElementById('confirm-box');
+      cb.style.display='block';
+      cb.scrollIntoView({behavior:'smooth'});
+    }else{
+      alert('There was a problem submitting. Please call (423) 463-0360 directly.');
+    }
+  })
+  .catch(function(){
+    alert('There was a problem submitting. Please call (423) 463-0360 directly.');
+  });
+}
+
+function submitFormEs(){
+  var name=document.getElementById('es-name').value.trim();
+  var phone=document.getElementById('es-phone').value.trim();
+  if(!name||!phone){
+    alert('Por favor ingrese su nombre y numero de telefono para que Joe pueda contactarle.');
+    return;
+  }
+  var data=new FormData(document.getElementById('intake-form-es'));
+  fetch('https://formspree.io/f/mkoqdonl',{
+    method:'POST',
+    body:data,
+    headers:{'Accept':'application/json'}
+  })
+  .then(function(response){
+    if(response.ok){
+      document.getElementById('intake-form-wrap-es').style.display='none';
+      var cb=document.getElementById('confirm-box-es');
+      cb.style.display='block';
+      cb.scrollIntoView({behavior:'smooth'});
+    }else{
+      alert('Hubo un problema. Por favor llame al (423) 463-0360 directamente.');
+    }
+  })
+  .catch(function(){
+    alert('Hubo un problema. Por favor llame al (423) 463-0360 directamente.');
+  });
+}
+</script>
+</body>
+</html>
