@@ -22,7 +22,6 @@ img{max-width:100%;display:block}
 .btn-gold{background:var(--gold);color:var(--navy-dk)}.btn-gold:hover{background:var(--gold-lt)}
 .btn-outline{background:transparent;border:2px solid var(--gold);color:var(--gold)}.btn-outline:hover{background:rgba(201,168,76,.1)}
 .btn-navy{background:transparent;border:2px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75)}.btn-navy:hover{border-color:var(--gold);color:var(--gold)}
-.btn-nv2{background:transparent;border:2px solid var(--navy);color:var(--navy);min-height:48px}
 .btn-full{width:100%;display:flex}
 .page{display:none}.page.active{display:block}
 
@@ -44,6 +43,8 @@ img{max-width:100%;display:block}
 .nav-call{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.65rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .85rem;min-height:36px;display:flex;align-items:center;gap:.3rem;white-space:nowrap}
 .nav-esp-btn{background:var(--blue);color:#fff;font-family:Arial,sans-serif;font-size:.62rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .75rem;min-height:36px;display:flex;align-items:center;border:none;cursor:pointer;white-space:nowrap}
 .nav-eng-btn{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.62rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .75rem;min-height:36px;display:flex;align-items:center;border:none;cursor:pointer;white-space:nowrap}
+.nav-blog-btn{background:transparent;color:rgba(255,255,255,.7);font-family:Arial,sans-serif;font-size:.62rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:.45rem .75rem;min-height:36px;display:flex;align-items:center;border:1px solid rgba(255,255,255,.2);cursor:pointer;white-space:nowrap}
+.nav-blog-btn:hover{border-color:var(--gold);color:var(--gold)}
 .nav-menu-btn{background:none;border:1px solid rgba(201,168,76,.4);color:var(--gold);width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem}
 .nav-es-bar .nav-menu-btn{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7)}
 
@@ -149,15 +150,15 @@ img{max-width:100%;display:block}
 .form-head p{color:rgba(255,255,255,.4);font-size:.73rem;font-family:Arial,sans-serif;line-height:1.5}
 .fg{margin-bottom:.85rem}
 .fg label{display:block;color:var(--gold);font-size:.62rem;letter-spacing:2px;text-transform:uppercase;font-family:Arial,sans-serif;margin-bottom:.3rem}
-.fg input,.fg textarea,.fg select{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.22);color:#fff;padding:.72rem .85rem;font-family:Arial,sans-serif;font-size:1rem;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none;border-radius:0;min-height:48px}
-.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold)}
+.fg input:not([type=radio]),.fg textarea,.fg select{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.22);color:#fff;padding:.72rem .85rem;font-family:Arial,sans-serif;font-size:1rem;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none;border-radius:0;min-height:48px}
+.fg input:not([type=radio]):focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold)}
 .fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.22)}
 .fg select option{background:var(--navy-dk);color:#fff}
 .fg textarea{min-height:90px;resize:vertical}
 .fg-row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
 .radio-group{display:flex;gap:1.25rem;margin-top:.35rem;flex-wrap:wrap}
 .radio-opt{display:flex;align-items:center;gap:.45rem;cursor:pointer;min-height:40px}
-.radio-opt input[type=radio]{accent-color:var(--gold);width:18px;height:18px;min-width:18px;cursor:pointer}
+.radio-opt input[type=radio]{accent-color:var(--gold);width:18px;height:18px;min-width:18px;cursor:pointer;-webkit-appearance:radio;appearance:radio}
 .radio-opt span{color:rgba(255,255,255,.75);font-family:Arial,sans-serif;font-size:.9rem}
 .submit-btn{width:100%;background:var(--gold);color:var(--navy-dk);padding:1.1rem;font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:bold;border:none;cursor:pointer;transition:background .2s;margin-top:.4rem;min-height:54px}
 .submit-btn:hover{background:var(--gold-lt)}
@@ -171,6 +172,31 @@ img{max-width:100%;display:block}
 .conf-next p{font-size:.79rem;color:rgba(255,255,255,.55);margin-bottom:.3rem;text-align:left;max-width:100%}
 .conf-next strong{color:var(--gold)}
 
+/* BLOG PAGE */
+.blog-hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:70px 1.25rem 60px;text-align:center}
+.blog-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,3rem);font-weight:normal;margin-bottom:.6rem}
+.blog-hero h1 strong{color:var(--gold);font-weight:normal}
+.blog-hero p{color:rgba(255,255,255,.55);font-style:italic;font-size:.93rem;font-family:Arial,sans-serif;max-width:560px;margin:.5rem auto 0}
+.blog-sec{padding:60px 1.25rem;background:var(--cream)}
+.blog-in{max-width:860px;margin:0 auto}
+.blog-sub-banner{background:var(--navy-dk);border:1px solid rgba(201,168,76,.25);padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:3rem}
+.blog-sub-banner p{color:rgba(255,255,255,.65);font-family:Arial,sans-serif;font-size:.88rem;line-height:1.6}
+.blog-sub-banner strong{color:var(--gold)}
+.blog-sub-btn{background:var(--gold);color:var(--navy-dk);font-family:Arial,sans-serif;font-size:.7rem;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:.72rem 1.6rem;border:none;cursor:pointer;min-height:44px;white-space:nowrap;transition:background .2s}
+.blog-sub-btn:hover{background:var(--gold-lt)}
+.post-grid{display:flex;flex-direction:column;gap:2rem}
+.post-card{background:var(--white);border-top:4px solid var(--gold);padding:2rem 2rem 1.75rem}
+.post-card-tag{font-family:Arial,sans-serif;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.65rem}
+.post-card h2{font-size:clamp(1.2rem,3vw,1.65rem);color:var(--navy);font-weight:normal;line-height:1.3;margin-bottom:.5rem}
+.post-card-meta{font-family:Arial,sans-serif;font-size:.72rem;color:var(--muted);margin-bottom:1.1rem;letter-spacing:.5px}
+.post-card p{color:#3a3a4a;line-height:1.85;font-size:.96rem;margin-bottom:1.4rem}
+.post-card-link{display:inline-flex;align-items:center;gap:.5rem;background:var(--navy);color:var(--gold);font-family:Arial,sans-serif;font-size:.7rem;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:.65rem 1.4rem;transition:background .2s}
+.post-card-link:hover{background:var(--navy-md)}
+.blog-more{margin-top:2.5rem;background:var(--navy-dk);padding:2.5rem;text-align:center;border-top:3px solid var(--gold)}
+.blog-more h3{color:var(--white);font-size:1.3rem;font-weight:normal;margin-bottom:.65rem}
+.blog-more p{color:rgba(255,255,255,.5);font-family:Arial,sans-serif;font-size:.86rem;line-height:1.7;max-width:460px;margin:0 auto 1.5rem}
+
+/* BIO PAGE */
 .bio-hero{background:linear-gradient(160deg,var(--navy-dk) 0%,var(--navy-md) 65%,#1a4a7a 100%);padding:70px 1.25rem 60px;text-align:center}
 .bio-hero h1{color:#fff;font-size:clamp(1.8rem,4vw,3rem);font-weight:normal;margin-bottom:.6rem}
 .bio-hero h1 strong{color:var(--gold);font-weight:normal}
@@ -216,6 +242,9 @@ img{max-width:100%;display:block}
   .bio-cred-grid{grid-template-columns:1fr 1fr}
   .esp-strip{flex-direction:column;gap:.75rem}
   .bio-pullquote{padding:1.1rem 1.25rem}
+  .blog-sub-banner{flex-direction:column;text-align:center}
+  .post-card{padding:1.5rem 1.25rem}
+  .nav-blog-btn{display:none}
 }
 @media(min-width:681px){
   .hero-photo-mobile{display:none}
@@ -237,33 +266,42 @@ img{max-width:100%;display:block}
   <a href="tel:4234630360">(423) 463-0360</a>
 </div>
 
+<!-- ENGLISH NAV -->
 <nav id="nav-en" class="nav-en-bar">
   <button class="nav-brand" onclick="go('home')">Joseph V. Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Attorney at Law</span></button>
   <div class="nav-actions">
+    <button class="nav-blog-btn" onclick="go('blog')">Blog</button>
     <button class="nav-esp-btn" onclick="go('spanish')">&#127466;&#127480; Espa&ntilde;ol</button>
     <a href="tel:4234630360" class="nav-call">&#9990; (423) 463-0360</a>
     <button class="nav-menu-btn" onclick="toggleMenu('en')" aria-label="Menu">&#9776;</button>
   </div>
 </nav>
 
+<!-- SPANISH NAV -->
 <nav id="nav-es" class="nav-es-bar">
   <button class="nav-brand" onclick="go('spanish')" style="color:rgba(255,255,255,.9)">Joe Hoffer<br><span style="font-size:.58rem;color:rgba(255,255,255,.35);letter-spacing:1px;font-weight:normal">Abogado Defensor</span></button>
   <div class="nav-actions">
+    <button class="nav-blog-btn" onclick="go('blog')">Blog</button>
     <button class="nav-eng-btn" onclick="go('home')">&#127482;&#127480; English</button>
     <a href="tel:4234630360" class="nav-call">&#9990; (423) 463-0360</a>
     <button class="nav-menu-btn" onclick="toggleMenu('es')" style="border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7)" aria-label="Men&uacute;">&#9776;</button>
   </div>
 </nav>
 
+<!-- ENGLISH MOBILE MENU -->
 <div id="menu-en" class="mobile-menu">
   <button onclick="go('home');closeMenu()">Home</button>
   <button onclick="go('bio');closeMenu()">Biography</button>
+  <button onclick="go('blog');closeMenu()">Blog</button>
   <button onclick="scrollToIntake();closeMenu()">Submit Information Now</button>
   <a href="tel:4234630360">&#9990; &nbsp;Call (423) 463-0360</a>
   <button class="menu-esp-item" onclick="go('spanish');closeMenu()">&#127466;&#127480; &nbsp;Espa&ntilde;ol</button>
 </div>
+
+<!-- SPANISH MOBILE MENU -->
 <div id="menu-es" class="mobile-menu" style="border-bottom-color:var(--blue)">
   <button onclick="go('spanish');closeMenu()">Inicio</button>
+  <button onclick="go('blog');closeMenu()">Blog</button>
   <button onclick="scrollToIntakeEs();closeMenu()">Enviar Informaci&oacute;n Ahora</button>
   <a href="tel:4234630360">&#9990; &nbsp;Llamar (423) 463-0360</a>
   <button class="menu-eng-item" onclick="go('home');closeMenu()">&#127482;&#127480; &nbsp;English</button>
@@ -277,7 +315,6 @@ img{max-width:100%;display:block}
 
   <div class="hero">
     <div class="hero-in">
-
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
           <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
@@ -285,7 +322,6 @@ img{max-width:100%;display:block}
         <div class="hero-ph-name">Joseph V. Hoffer</div>
         <div class="hero-ph-title">Criminal Defense &nbsp;&bull;&nbsp; State &amp; Federal</div>
       </div>
-
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
           <img src="joepic.jpg" alt="Joe Hoffer, Criminal Defense Attorney">
@@ -297,7 +333,6 @@ img{max-width:100%;display:block}
           <p><strong>Submit Information 24/7</strong><br>Leave your concerns immediately for review. Everything is confidential.</p>
         </div>
       </div>
-
       <div>
         <p class="hero-eyebrow">Criminal Defense &nbsp;&bull;&nbsp; Tennessee &amp; Federal Courts</p>
         <h1>I Know How<br>Prosecutors Think &mdash;<br>Because I <strong>Was One.</strong></h1>
@@ -385,7 +420,7 @@ img{max-width:100%;display:block}
             <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Search &amp; Seizure Law</h4><p>If law enforcement overstepped, Joe will find it and use it in your defense.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Law of Arrest</h4><p>Illegal arrest procedures can change the entire trajectory of your case.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Criminal Procedure &amp; Trial</h4><p>From investigation through verdict &mdash; experience on every stage from both sides.</p></div></div>
-            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Juvenile Criminal Defense</h4><p>Experienced in juvenile court from both the prosecution and defense side &mdash; protecting young people&rsquo;s futures.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Juvenile Criminal Defense</h4><p>Experienced in juvenile court from both the prosecution and defense side.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#8383;</div><div class="exp-text"><h4>Cryptocurrency &amp; Digital Evidence</h4><p>One of Tennessee&rsquo;s foremost authorities on blockchain evidence and digital asset crimes.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9993;</div><div class="exp-text"><h4>Submit Information or Call 24/7</h4><p>Leave your concerns any time. Joe will review your matter and respond promptly.</p></div></div>
           </div>
@@ -536,6 +571,52 @@ img{max-width:100%;display:block}
 
 
 <!-- ═══════════════════════════════════════ -->
+<!--              BLOG PAGE                 -->
+<!-- ═══════════════════════════════════════ -->
+<div class="page" id="page-blog">
+  <div class="blog-hero">
+    <h1>The Defense <strong>Brief</strong></h1>
+    <p>Criminal law, cryptocurrency, AI, and the justice system &mdash; written by Joe Hoffer from both sides of the courtroom.</p>
+  </div>
+
+  <div class="blog-sec">
+    <div class="blog-in">
+
+      <div class="blog-sub-banner">
+        <p><strong>Subscribe free on Substack</strong> and receive new articles directly in your inbox. Joe writes for attorneys, law enforcement professionals, and anyone navigating the criminal justice system.</p>
+        <a href="https://joehoffer.substack.com" target="_blank"><button class="blog-sub-btn">Subscribe Free &rarr;</button></a>
+      </div>
+
+      <div class="post-grid">
+
+        <!-- POST 1 — update this card each time you publish a new article -->
+        <div class="post-card">
+          <div class="post-card-tag">Criminal Justice</div>
+          <h2>What to Do After an Arrest or a Search Warrant</h2>
+          <div class="post-card-meta">Joe Hoffer &nbsp;&bull;&nbsp; April 5, 2026</div>
+          <p>What To Do When the Government Comes for You: A Criminal Defense Lawyer&rsquo;s Straight Talk on Arrests and Search Warrants. The call comes in the middle of the night, or maybe it&rsquo;s a knock at the door on a Tuesday morning. Either way, the moment law enforcement makes contact &mdash; whether they&rsquo;re putting you in handcuffs or handing you a piece of paper and pushing past you into your home &mdash; most people freeze. They don&rsquo;t know their rights, they don&rsquo;t know the rules, and in that moment of fear and confusion, they often say or do things that will haunt them for years.</p>
+          <a href="https://joehoffer.substack.com/p/what-to-do-after-arrest-or-a-search" target="_blank" class="post-card-link">Read Full Article &rarr;</a>
+        </div>
+
+        <!-- ADD NEW POST CARDS ABOVE THIS LINE following the same format -->
+
+      </div>
+
+      <div class="blog-more">
+        <h3>Read All Articles on Substack</h3>
+        <p>All of Joe&rsquo;s published articles are available on Substack. Subscribe free to be notified the moment a new article is published.</p>
+        <a href="https://joehoffer.substack.com" target="_blank"><button class="blog-sub-btn">Visit joehoffer.substack.com &rarr;</button></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="disc-bar">Articles published on this blog are for general informational purposes only and do not constitute legal advice. Reading these articles does not create an attorney-client relationship.</div>
+  <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Attorney at Law &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; All Rights Reserved</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════ -->
 <!--           BIOGRAPHY PAGE               -->
 <!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-bio">
@@ -661,7 +742,6 @@ img{max-width:100%;display:block}
 
   <div class="hero">
     <div class="hero-in">
-
       <div class="hero-photo-mobile">
         <div class="hero-photobox" style="max-width:200px;margin:0 auto">
           <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
@@ -670,7 +750,6 @@ img{max-width:100%;display:block}
         <div class="hero-ph-name">Joe Hoffer</div>
         <div class="hero-ph-title">Abogado Defensor &nbsp;&bull;&nbsp; Estatal y Federal</div>
       </div>
-
       <div class="hero-photo-desktop">
         <div class="hero-photobox">
           <img src="joepic.jpg" alt="Joe Hoffer, Abogado Defensor">
@@ -683,7 +762,6 @@ img{max-width:100%;display:block}
           <p><strong>Env&iacute;e Informaci&oacute;n 24/7</strong><br>Deje sus datos ahora para revisi&oacute;n inmediata. Todo es confidencial.</p>
         </div>
       </div>
-
       <div>
         <p class="hero-eyebrow">Defensa Criminal &nbsp;&bull;&nbsp; Tribunales de Tennessee y Federales</p>
         <h1>S&eacute; C&oacute;mo Piensan<br>Los Fiscales &mdash;<br>Porque Yo <strong>Fui Uno.</strong></h1>
@@ -767,7 +845,7 @@ img{max-width:100%;display:block}
             <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Ley de Registros e Incautaciones</h4><p>Si las autoridades violaron sus derechos, lo encontrar&eacute; y lo usar&eacute; en su defensa.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9873;</div><div class="exp-text"><h4>Ley de Arresto</h4><p>Los procedimientos ilegales de arresto pueden cambiar completamente el curso de su caso.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9776;</div><div class="exp-text"><h4>Procedimiento Criminal y Juicio</h4><p>Desde la investigaci&oacute;n hasta el veredicto &mdash; experiencia en cada etapa desde ambos lados.</p></div></div>
-            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Defensa en Tribunal Juvenil</h4><p>Protecci&oacute;n para j&oacute;venes que enfrentan cargos criminales &mdash; con experiencia en ambos lados del caso.</p></div></div>
+            <div class="exp-item"><div class="exp-ico">&#9878;</div><div class="exp-text"><h4>Defensa en Tribunal Juvenil</h4><p>Protecci&oacute;n para j&oacute;venes que enfrentan cargos criminales &mdash; con experiencia en ambos lados.</p></div></div>
             <div class="exp-item"><div class="exp-ico">&#9993;</div><div class="exp-text"><h4>Disponible 24/7 &mdash; En Espa&ntilde;ol</h4><p>Env&iacute;e sus datos o ll&aacute;menos a cualquier hora. Joe revisar&aacute; su caso con prontitud.</p></div></div>
           </div>
         </div>
@@ -898,7 +976,7 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
-  <div class="disc-bar">Este sitio web es solo para fines informativos y no constituye asesoramiento legal. El env&iacute;o de este formulario no crea una relaci&oacute;n abogado-cliente. Toda comunicaci&oacute;n es confidencial. Los resultados anteriores no garantizan resultados similares.</div>
+  <div class="disc-bar">Este sitio web es solo para fines informativos y no constituye asesoramiento legal. El env&iacute;o de este formulario no crea una relaci&oacute;n abogado-cliente. Toda comunicaci&oacute;n es confidencial.</div>
   <div class="ftr">&copy; 2026 <em>Joseph V. Hoffer</em>, Abogado de Defensa &nbsp;&bull;&nbsp; Cleveland, Tennessee &nbsp;&bull;&nbsp; (423) 463-0360 &nbsp;&bull;&nbsp; JoeHoffer@hofferdefense.com &nbsp;&bull;&nbsp; Todos los Derechos Reservados</div>
 </div>
 
@@ -916,18 +994,15 @@ function go(n){
   closeMenu();
   try{window.scrollTo(0,0);}catch(e){}
 }
-
 function toggleMenu(lang){
   var menuId=(lang==='es')?'menu-es':'menu-en';
   var other=(lang==='es')?'menu-en':'menu-es';
   document.getElementById(other).classList.remove('open');
   document.getElementById(menuId).classList.toggle('open');
 }
-
 function closeMenu(){
   document.querySelectorAll('.mobile-menu').forEach(function(m){m.classList.remove('open');});
 }
-
 function scrollToIntake(){
   go('home');
   setTimeout(function(){
@@ -935,7 +1010,6 @@ function scrollToIntake(){
     if(el)el.scrollIntoView({behavior:'smooth'});
   },80);
 }
-
 function scrollToIntakeEs(){
   go('spanish');
   setTimeout(function(){
@@ -943,7 +1017,6 @@ function scrollToIntakeEs(){
     if(el)el.scrollIntoView({behavior:'smooth'});
   },80);
 }
-
 function submitForm(){
   var name=document.getElementById('en-name').value.trim();
   var phone=document.getElementById('en-phone').value.trim();
@@ -971,7 +1044,6 @@ function submitForm(){
     alert('There was a problem submitting. Please call (423) 463-0360 directly.');
   });
 }
-
 function submitFormEs(){
   var name=document.getElementById('es-name').value.trim();
   var phone=document.getElementById('es-phone').value.trim();
