@@ -1,34 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main homepage — English -->
   <url>
     <loc>https://www.hofferdefense.com/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 
-  <!-- Biography section -->
   <url>
-    <loc>https://www.hofferdefense.com/#biography</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.hofferdefense.com/federal-defense.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Spanish homepage -->
   <url>
-    <loc>https://www.hofferdefense.com/#espanol</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.hofferdefense.com/cryptocurrency-defense.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Contact / Submit Information -->
   <url>
-    <loc>https://www.hofferdefense.com/#contact</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.hofferdefense.com/search-seizure.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Blog section -->
   <url>
-    <loc>https://www.hofferdefense.com/#blog</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://www.hofferdefense.com/dui-defense.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hofferdefense.com/drug-defense.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hofferdefense.com/juvenile-defense.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hofferdefense.com/defensa-en-espanol.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hofferdefense.com/attorney-fees.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
